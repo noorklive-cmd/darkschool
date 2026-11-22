@@ -1,0 +1,15 @@
+# Prompts reutilizáveis
+
+## Pesquisa de concorrentes
+
+Leia o contexto da frente e consulte páginas oficiais. Entregue uma tabela com oferta, público, preço anunciado, cobrança recorrente, fonte e data da consulta. Marque divergências e dados ausentes. Termine com uma hipótese e um teste verificável.
+
+## Design e copy
+
+Leia o briefing e a direção visual. Proponha uma hierarquia com uma ação principal, escreva a copy a partir de fatos verificáveis e mostre como o fluxo se comporta no celular. Inclua foco visível e respeite preferência por movimento reduzido.
+
+## Implementação e revisão
+
+Identifique o código de origem e a versão publicada. Faça a mudança no caminho existente, valide no celular e teste links, navegação por teclado e estados relevantes. Entregue um preview e registre os arquivos modificados e as limitações encontradas.
+
+Referência reutilizável: [Agente Workbench](https://github.com/noorklive-cmd/Agente-Workbench).

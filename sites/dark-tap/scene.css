@@ -1,0 +1,106 @@
+.hero { grid-template-columns: minmax(0, 1.22fr) minmax(0, 1fr); }
+.hero h1 { margin-block: 1.25rem 1.65rem; font-size: clamp(2.6rem, 5.4vw, 5.7rem); }
+.hero h1 em { display: block; color: var(--muted); }
+.hero-art { min-width: 0; margin: 0; }
+.art-stage {
+  overflow: hidden;
+  perspective: 950px;
+  aspect-ratio: 1.4;
+  background: #141414;
+  border: 1px solid var(--line);
+}
+.art-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.08) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(var(--lift, 0px));
+  transition: transform 260ms var(--ease-out);
+}
+.guide-pages { perspective: 950px; padding-block: .8rem; }
+.guide-pages figure:first-child a { transform: rotateY(12deg); transform-origin: right center; }
+.guide-pages figure:last-child a { transform: rotateY(-13deg); transform-origin: left center; }
+.guide-pages a { transition: transform 260ms var(--ease-out); }
+@media (hover: hover) and (pointer: fine) {
+  .guide-pages figure a:hover { transform: rotateY(0) translateZ(24px); }
+}
+.guide-pages figure a:focus-visible { transform: none; }
+.profile { display: grid; grid-template-columns: minmax(0, 10rem) 1fr; align-items: center; gap: clamp(1rem, 4vw, 3rem); }
+.profile img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+@media (max-width: 42rem) {
+  .hero { grid-template-columns: 1fr; }
+  .profile { grid-template-columns: minmax(0, 6rem) 1fr; }
+  .profile h2 { font-size: clamp(1.8rem, 7vw, 2.6rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .art-image, .guide-pages figure a, .guide-pages figure a:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Ambient light stays behind the content while its position follows the page. */
+body { isolation: isolate; }
+.ambient { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.ambient-light, .ambient-grid { position: absolute; inset: -18%; }
+.ambient-light {
+  background: radial-gradient(ellipse at center, #777b8435, transparent 60%);
+  transform: translate3d(var(--light-x, 0%), var(--light-y, -15%), 0);
+}
+.ambient-grid {
+  background-image: linear-gradient(#d8dce412 1px, transparent 1px), linear-gradient(90deg, #d8dce412 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse, #000, transparent 65%);
+  transform: translate3d(0, var(--grid-y, 0px), 0);
+}
+.case, .workflow, .contact { background: rgb(24 24 24 / 86%); }
+
+.art-stage {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+  background: none;
+  border: 0;
+}
+.art-aura {
+  position: absolute;
+  inset: 4% 0;
+  background: radial-gradient(ellipse at 49% 56%, #666b7538, #373a401c 38%, transparent 67%);
+  transform: translateY(5%);
+}
+.art-float { position: absolute; inset: 0; animation: levitate 6s cubic-bezier(.45,0,.55,1) infinite; }
+.art-image { object-fit: contain; }
+@keyframes levitate {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* The wireframe draws over the content, which remains available throughout. */
+[data-reveal] { position: relative; }
+[data-reveal]::after {
+  content: "";
+  position: absolute;
+  inset: -.65rem;
+  pointer-events: none;
+  border: 1px solid #afb2ba;
+  opacity: 0;
+}
+[data-reveal].drawing::after { animation: draw-outline 850ms var(--ease-out) both; }
+@keyframes draw-outline {
+  0% { opacity: 0; clip-path: inset(0 100% 98% 0); }
+  20% { opacity: .42; clip-path: inset(0 0 98% 0); }
+  62% { opacity: .26; clip-path: inset(0); }
+  100% { opacity: 0; clip-path: inset(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ambient-light, .ambient-grid { transform: none; }
+  .art-float, [data-reveal].drawing::after { animation: none; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .guide-pages.drawing img { animation: settle-image 520ms var(--ease-out) both; }
+  @keyframes settle-image {
+    from { opacity: .72; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}

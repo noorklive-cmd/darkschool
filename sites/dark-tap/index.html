@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101010">
+<meta name="description" content="Cartão NFC da Dark School para negócios locais. Abra seu cardápio, WhatsApp ou página de avaliações com um toque.">
+<title>Alex Designer Lab — Design e desenvolvimento</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=20261121-3">
+<script type="module" src="navigation.js"></script>
+<link rel="stylesheet" href="scene.css?v=20261121-3">
+<script type="module" src="scene.js?v=4"></script>
+<link rel="stylesheet" href="nfc.css?v=editorial">
+<link rel="stylesheet" href="sections.css?v=portfolio">
+<script type="module" src="title-motion.js?v=scroll-color"></script>
+<script type="module" src="nfc.js?v=code-background"></script>
+<link rel="stylesheet" href="oferta.css?v=3">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"><div class="ambient-light"></div><div class="ambient-grid"></div></div>
+<a class="skip" href="#principal">Pular para o conteúdo</a>
+<header id="topo" class="wrap header">
+  <a class="wordmark" href="./" aria-label="Alex Designer Lab, início">
+    <img src="dark-school.svg" width="32" height="32" alt="">
+    <span>Alex Designer Lab</span>
+  </a>
+  <button class="menu-toggle" type="button" aria-controls="nav-principal" aria-expanded="false" hidden>Menu</button>
+  <nav id="nav-principal" aria-label="Navegação principal">
+    <a href="#servicos">Como funciona</a>
+    <a href="#planos">Planos</a>
+    <a href="#sobre">Sobre</a>
+    <a class="nav-contact" href="#contato">Contato</a>
+  </nav>
+</header>
+<main id="principal">
+  <section class="wrap hero" aria-labelledby="titulo">
+    <div class="hero-code" aria-hidden="true">
+      <pre class="hero-code-command">$ git status --short
+$ npm run build</pre>
+      <pre class="hero-code-markup">&lt;section id="nfc"&gt;
+  &lt;button type="button"&gt;
+    Aproximar cartão
+  &lt;/button&gt;
+&lt;/section&gt;</pre>
+      <pre class="hero-code-event">const destination = card.destination;
+render(destination);</pre>
+    </div>
+    <span class="ds-watermark" aria-hidden="true">DS</span>
+    <div class="hero-copy">
+      <p class="section-index" aria-label="Seção 1 de 4">01 <span>/ 04</span></p>
+      <p class="label">CARTÃO NFC PARA NEGÓCIOS LOCAIS</p>
+      <h1 id="titulo" data-title-motion>Do balcão <em>para o celular<span class="accent">.</span></em></h1>
+      <p>Deixe o cartão NFC no caixa. Ao aproximar o celular, o cliente abre seu cardápio, seu WhatsApp ou a página de avaliação no Google.</p>
+    </div>
+    <section id="demo-nfc" class="nfc-demo" aria-label="Demonstração do cartão NFC" data-state="ready">
+      <div class="nfc-stage">
+        <div class="nfc-card" aria-hidden="true">
+          <img src="dark-school.svg" alt="" width="32" height="32">
+          <span>DARK SCHOOL</span>
+          <svg width="23" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 9a5 5 0 0 1 0 6m4-9a10 10 0 0 1 0 12m4-15a15 15 0 0 1 0 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="nfc-pulse" aria-hidden="true"></div>
+        <div class="nfc-phone">
+          <div class="nfc-screen">
+            <span class="nfc-island" aria-hidden="true"></span>
+            <div class="nfc-idle"><img src="dark-school.svg" alt="" width="36" height="36"><span>Pronto para aproximar</span></div>
+            <div class="nfc-business" hidden>
+              <span>CAFÉ DO BAIRRO</span>
+              <strong>Como podemos ajudar?</strong>
+              <button type="button" class="nfc-destination">Ver cardápio</button>
+            </div>
+          </div>
+        </div>
+        <form class="nfc-panel" hidden>
+          <label for="nfc-target">Link do cartão</label>
+          <select id="nfc-target">
+            <option value="menu">Cardápio</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="reviews">Avaliações</option>
+          </select>
+          <button type="submit">Salvar destino</button>
+        </form>
+      </div>
+      <div class="nfc-actions" hidden>
+        <button type="button" class="nfc-tap">Aproximar cartão</button>
+        <button type="button" class="nfc-edit" aria-expanded="false" hidden>Painel do lojista</button>
+      </div>
+      <p class="nfc-status" role="status">Demonstração NFC · Café do Bairro</p>
+    </section>
+  </section>
+  <section class="workflow" id="servicos" aria-labelledby="processo-titulo">
+    <div class="wrap">
+      <p class="section-index" aria-label="Seção 2 de 4">02 <span>/ 04</span> <span class="section-emoji" aria-hidden="true">⚡</span></p>
+      <h2 id="processo-titulo" data-title-motion>Do primeiro link ao balcão</h2>
+      <dl class="workflow-grid" data-reveal>
+        <div><dt><code>01 / CONFIGURAÇÃO</code> Escolha o destino</dt><dd>Começamos pela ação que mais interessa no atendimento: abrir o cardápio, chamar no WhatsApp ou avaliar no Google.</dd></div>
+        <div><dt><code>02 / TESTE</code> Confira no celular</dt><dd>Aproximamos o cartão de um aparelho compatível e verificamos se a página certa abre antes de ele ir para o caixa.</dd></div>
+        <div><dt><code>03 / MANUTENÇÃO</code> Atualize quando mudar</dt><dd>Se o cartão for configurado com um endereço fixo, o destino pode ser trocado nesse endereço sem regravar o cartão.</dd></div>
+      </dl>
+      <section class="offer-section" id="planos" aria-labelledby="planos-titulo">
+        <h3 id="planos-titulo">Cartão NFC</h3>
+        <div class="offer-price"><strong>R$ 6,98</strong><span>por unidade · sem gravação</span></div>
+        <p>Configuração, personalização e frete sob consulta.</p>
+        <div class="offer-grid">
+          <article><span class="offer-icon" aria-hidden="true">🔗</span><h4>Link direto</h4><p>Para o caixa onde o cliente precisa chegar a um destino, como avaliações no Google ou cardápio.</p><a class="inline" href="https://wa.me/5511940877072?text=Ol%C3%A1%2C%20Alex%21%20Quero%20avaliar%20um%20cart%C3%A3o%20NFC%20com%20um%20link%20direto%20para%20meu%20neg%C3%B3cio.">Consultar Link direto</a></article>
+          <article><span class="offer-icon" aria-hidden="true">📱</span><h4>Página de links</h4><p>Para negócios que precisam reunir cardápio, WhatsApp e avaliações na mesma tela.</p><a class="inline" href="https://wa.me/5511940877072?text=Ol%C3%A1%2C%20Alex%21%20Quero%20avaliar%20um%20cart%C3%A3o%20NFC%20com%20uma%20p%C3%A1gina%20de%20links%20para%20meu%20neg%C3%B3cio.">Consultar Página de links</a></article>
+        </div>
+      </section>
+      <section class="offer-section" aria-labelledby="extras-titulo">
+        <h3 id="extras-titulo">Serviços à parte</h3>
+        <ul class="offer-extras">
+          <li><span aria-hidden="true">✦</span> Arte personalizada para o cartão</li>
+          <li><span aria-hidden="true">✦</span> Página de links com a identidade do negócio</li>
+          <li><span aria-hidden="true">✦</span> Criação de site ou cardápio digital</li>
+        </ul>
+      </section>
+      <section class="offer-section offer-faq" aria-labelledby="faq-titulo">
+        <h3 id="faq-titulo">Perguntas frequentes</h3>
+        <details><summary>Preciso ter um site?</summary><p>Você pode usar um endereço que já tem, como seu WhatsApp, o cardápio online ou seu link de avaliação no Google.</p></details>
+        <details><summary>O cliente precisa baixar um aplicativo?</summary><p>O cartão com link pode abrir pelo próprio celular quando o aparelho é compatível com leitura NFC. A forma de abrir varia conforme o modelo e as configurações.</p></details>
+        <details><summary>Posso usar o mesmo cartão se o link mudar?</summary><p>Sim, se gravarmos um endereço fixo que redireciona para o destino. Com o link gravado diretamente, é preciso regravar o cartão.</p></details>
+        <details><summary>O painel da demonstração já está disponível?</summary><p>O painel do lojista nesta página é uma simulação. Fale com a Dark School para saber quais configurações estão disponíveis para o seu cartão.</p></details>
+      </section>
+    </div>
+  </section>
+  <section class="wrap profile" id="sobre" aria-labelledby="sobre-titulo">
+    <img src="alex-santos-perfil.jpg" alt="Retrato de Alex Santos" width="1185" height="1536" loading="lazy">
+    <div>
+      <p class="section-index" aria-label="Seção 3 de 4">03 <span>/ 04</span></p>
+      <h2 id="sobre-titulo" data-title-motion>Alex Santos</h2>
+      <p>Comecei no atendimento em um salão de beleza, passei pelo design gráfico e hoje lidero a Dark School. Acompanho cada projeto da primeira conversa à publicação.</p>
+    </div>
+  </section>
+  <section class="contact" id="contato" aria-labelledby="contato-titulo">
+    <div class="wrap contact-grid">
+      <div><p class="section-index" aria-label="Seção 4 de 4">04 <span>/ 04</span></p>
+      <h2 id="contato-titulo" data-title-motion>Sua empresa vende ou atende pelo digital?</h2><p>Me conte como seus clientes chegam e onde o atendimento emperra. Na avaliação, a gente identifica o que vale melhorar primeiro.</p></div>
+      <div class="contact-links">
+        <a class="button" href="https://wa.me/5511940877072?text=Ol%C3%A1%2C%20Alex%21%20Gostaria%20de%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20para%20o%20meu%20neg%C3%B3cio.">Solicitar avaliação gratuita</a>
+        <small class="contact-note">Sem compromisso</small>
+        <a class="inline" href="mailto:alexdesigner.suporte@gmail.com">Prefiro falar por e-mail</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="wrap footer">
+  <span>Alex Designer Lab · Alex Santos</span>
+  <div class="footer-links">
+    <a href="#topo">Voltar ao topo</a>
+    <a href="https://www.instagram.com/alexdes1gner_/">Instagram</a>
+    <a href="https://wa.me/5511940877072">WhatsApp</a>
+  </div>
+</footer>
+</body>
+</html>
