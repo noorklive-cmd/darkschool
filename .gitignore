@@ -6,3 +6,7 @@ node_modules/
 .netlify/
 .DS_Store
 __pycache__/
+
+# Local inspection artifacts and user-supplied source files
+/.analysis-frames/
+/.codex-attachments/
