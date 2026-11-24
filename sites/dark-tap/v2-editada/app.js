@@ -53,40 +53,49 @@ function tile(title, copy, icon, color, link = '') {
 get('destinations').innerHTML = group.filter((item) => item.title).map((item) => tile(item.title, item.copy, item.icon, item.color, '<a href="#personalizacao" data-target="' + item.name + '" class="tile-link" aria-label="Configurar ' + item.name + '">CONFIGURAR ↗</a>')).join('');
 get('uses').innerHTML = uses.map((item) => tile(...item)).join('');
 get('extras').innerHTML = extras.map((item) => tile(...item)).join('');
-const colors = [
-  ['Ciano','#11dbef','#377dff'], ['Violeta','#8c36fc','#e100ee'], ['Magenta','#fb19ac','#ff6546'], ['Âmbar','#ffc228','#fa7c12']
-];
-get('choices').innerHTML = group.map((item) => '<button type="button" aria-pressed="false">' + item.name + '</button>').join('');
-get('colors').innerHTML = colors.map(([name, start, end], index) => '<button type="button" class="swatch" aria-label="' + name + '" aria-pressed="' + (index === 0) + '" style="--swatch:linear-gradient(135deg,' + start + ',' + end + ')"></button>').join('');
-const config = document.querySelector('.config');
-const message = get('message');
 const whatsapp = 'https://wa.me/5511940877072?text=';
-let destination = group[0];
-let color = colors[0];
-function updateConfig() {
-  const text = message.value.trim();
-  get('target-icon').innerHTML = svg(destination.icon);
-  get('target-title').textContent = destination.name;
-  get('target-example').textContent = destination.example;
-  get('message-preview').textContent = text || 'Sem mensagem personalizada.';
-  get('send').href = whatsapp + encodeURIComponent('Olá, Alex! Quero configurar meu Dark Tap. Destino: ' + destination.name + '. Aura: ' + color[0] + '.' + (destination.name === 'WhatsApp' && text ? ' Mensagem para o cartão: ' + text : ''));
+const selected = new Set();
+const list = new Intl.ListFormat('pt-BR', {type: 'conjunction'});
+const choices = get('choices');
+choices.innerHTML = group.map(({name}) => '<button type="button" aria-pressed="false">' + name + '</button>').join('');
+
+function refreshSelection() {
+  const names = list.format([...selected]);
+  for (const button of choices.children) {
+    button.setAttribute('aria-pressed', selected.has(button.textContent));
+  }
+  get('limit-note').hidden = true;
+  get('selection-count').textContent = selected.size + ' de 3 selecionados';
+  const send = get('send');
+  send.setAttribute('aria-disabled', !selected.size);
+  if (selected.size) {
+    send.href = whatsapp + encodeURIComponent('Olá, Alex! Tenho interesse no Dark Tap para ' + names + '.');
+  } else {
+    send.removeAttribute('href');
+  }
 }
-function chooseDestination(name) {
-  destination = group.find((item) => item.name === name);
-  [...get('choices').children].forEach((button) => button.setAttribute('aria-pressed', button.textContent === name));
-  updateConfig();
+
+function selectDestination(name, toggle) {
+  if (selected.has(name)) {
+    if (toggle) selected.delete(name);
+  } else if (selected.size === 3) {
+    const custom = get('custom-order');
+    custom.href = whatsapp + encodeURIComponent('Olá, Alex! Preciso de mais de três opções de Dark Tap. Já escolhi ' + list.format([...selected]) + ' e também quero ' + name + '.');
+    get('limit-note').hidden = false;
+    custom.focus({preventScroll: true});
+    return;
+  } else {
+    selected.add(name);
+  }
+  refreshSelection();
 }
-[...get('choices').children].forEach((button) => button.addEventListener('click', () => chooseDestination(button.textContent)));
-document.querySelectorAll('[data-target]').forEach((link) => link.addEventListener('click', () => chooseDestination(link.dataset.target)));
-[...get('colors').children].forEach((button, index, buttons) => button.addEventListener('click', () => {
-  color = colors[index];
-  buttons.forEach((item) => item.setAttribute('aria-pressed', item === button));
-  config.style.setProperty('--glow', color[1]);
-  config.style.setProperty('--edge', color[2]);
-  updateConfig();
-}));
-message.addEventListener('input', updateConfig);
-chooseDestination(destination.name);
+for (const button of choices.children) {
+  button.addEventListener('click', () => selectDestination(button.textContent, true));
+}
+document.querySelectorAll('[data-target]').forEach(link => {
+  link.addEventListener('click', () => selectDestination(link.dataset.target, false));
+});
+refreshSelection();
 document.querySelectorAll('.wa').forEach((link) => { link.href = whatsapp + encodeURIComponent('Olá, Alex! Quero configurar um Dark Tap sob medida.'); });
 
 const toggle = document.querySelector('.toggle');

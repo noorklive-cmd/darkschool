@@ -103,3 +103,9 @@ background:radial-gradient(ellipse at 104% 68%,#140b2b 0 31%,#9b5ead 32%,#43285f
 
 .steps li { min-width: 0; }
 .demo-copy .scroll-hint { margin-top: 24px; }
+
+.config #selection-count { font-size: .85rem; margin: 12px 0 22px; }
+#limit-note { margin: 0 0 20px; padding: 16px; border: 1px solid #ffffff29; border-radius: 14px; }
+#limit-note p { margin: 0 0 8px; }
+#custom-order { color: #9bdcff; text-decoration: underline; }
+#send[aria-disabled="true"] { opacity: .45; }
