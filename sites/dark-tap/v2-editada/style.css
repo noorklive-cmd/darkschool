@@ -88,47 +88,6 @@ background:radial-gradient(ellipse at 104% 68%,#140b2b 0 31%,#9b5ead 32%,#43285f
 .demo-copy h2 {
   margin-block: 16px 20px;
 }
-/* Duas fitas com cópias idênticas para uma volta sem salto. */
-.demo-copy { min-width: 0; }
-.destination-seal {
-  width: min(100%, 420px);
-  container-type: inline-size;
-  margin-block: 18px 0;
-  padding-block: 5px;
-  overflow: hidden;
-  border: 1px solid #ffffff24;
-  border-radius: 20px;
-  background: linear-gradient(110deg, #10171b, #101015 52%, #1a1320);
-}
-.seal-row {
-  overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-}
-.seal-row + .seal-row { border-top: 1px solid #ffffff10; }
-.seal-track {
-  display: flex;
-  width: max-content;
-  animation: seal-loop 20s linear infinite;
-}
-.seal-row + .seal-row .seal-track { animation-direction: reverse; }
-.seal-group {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  min-width: 100cqw;
-  min-height: 34px;
-  white-space: nowrap;
-  color: #e0dce6;
-  font-size: clamp(12px, 4cqw, 15px);
-}
-.seal-group span { display: inline-flex; align-items: center; gap: 9px; padding-inline: 4px; }
-.seal-group span::after { content: ""; width: 3px; height: 3px; border-radius: 50%; background: #67cede; }
-.seal-row + .seal-row span::after { background: #c499ed; }
-@keyframes seal-loop { to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) {
-  .seal-track { animation: none; }
-  .seal-group[aria-hidden] { display: none; }
-}
 @media (max-width: 759px) {
   .demo {
     top: min(83px, calc(100svh - 730px));
