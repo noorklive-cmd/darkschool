@@ -17,7 +17,7 @@ DarkAds terá identidade própria. A Project Six é referência para princípios
 - **Comunidade:** gratuita, no Discord, com foco em conexão mútua. Um endereço de convite consta em registro anterior do projeto, mas não pôde ser verificado como ativo nesta revisão; a ação de entrada fica oculta até a confirmação.
 - **Sessão individual:** oferta separada e opcional, com duração mínima de uma hora. Preço, agenda e forma de contratação não foram definidos. Omitir do primeiro lançamento.
 - **Materiais:** categorias planejadas de vídeos, automações e templates. Quantidades, composição e formato final dependem do Project Six e da finalização do produto.
-- **Code Makers:** ferramenta independente usada como apoio no processo de criação. A apresentação deve se limitar ao que a página oficial confirma; não dizer que há parceria, acesso incluso, desconto ou exigência de contratação.
+- **Code Makers:** ferramenta independente prevista como apoio no processo de criação. A apresentação deve se limitar ao que a página oficial confirma; não dizer que há parceria, acesso incluso, desconto ou exigência de contratação.
 - **Direção visual:** editorial escura, alto contraste e vermelho de ação usado com moderação. Referência: fundo #080808, superfícies #111111, texto #F5F5F5, texto secundário #A1A1AA, borda #262626 e vermelho #E11D2E.
 - **Checkout:** existe, segundo o responsável, mas a URL exata não foi fornecida. Não criar CTA funcional ou URL de suposição.
 - **Meios de pagamento:** não anunciar até conferir o checkout.
