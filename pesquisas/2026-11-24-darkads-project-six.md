@@ -56,3 +56,7 @@ A contratação fora do estabelecimento comercial pode ser desfeita no prazo de 
 2. Confirmar o inventário e a organização do produto.
 3. Abrir uma prévia acessível ao navegador para a revisão visual de desktop e mobile.
 4. Revisar os dados legais, suporte e condições comerciais antes da aprovação de publicação.
+
+## Limitações da execução
+
+O ambiente não expõe integração ou sessão autenticada do Code Makers. A fonte pública oficial foi consultada para conferir a descrição; a ferramenta não foi operada na criação. A revisão de desktop/mobile não foi concluída porque o navegador remoto não conseguiu acessar o servidor local. A página está versionada no repositório e permanece sem deploy de produção.
