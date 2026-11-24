@@ -12,6 +12,10 @@ Leia o briefing e a direção visual. Proponha uma hierarquia com uma ação pri
 
 Identifique o código de origem e a versão publicada. Faça a mudança no caminho existente, valide no celular e teste links, navegação por teclado e estados relevantes. Entregue um preview e registre os arquivos modificados e as limitações encontradas.
 
+## Prompts por projeto
+
+- [DarkAds v1 — página de vendas, comunidade, Code Makers e critérios de implementação](prompts/darkads-v1.md)
+
 ## Atendimento comercial
 
 - [SDR de IA para venda de sites](sdr-ia-sites.md): piloto de triagem para contatos interessados, com limites, prompt e passagem para Alex.
