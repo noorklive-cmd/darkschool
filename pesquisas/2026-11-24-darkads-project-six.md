@@ -21,7 +21,7 @@ A ferramenta de consulta não conseguiu buscar o vídeo e retornou `DisabledErro
 
 Fonte oficial: https://www.codemakers.com.br/
 
-A página oficial indexada descreve uma plataforma para encontrar clientes, conduzir a venda, organizar a execução e acompanhar o resultado de cada projeto. A página DarkAds apresenta o Code Makers como ferramenta independente de apoio usada no fluxo de criação. Não há confirmação de parceria, desconto, bônus ou acesso incluso; o texto deixa claro que o Code Makers não integra a compra do DarkAds e não é requisito para ela.
+A página oficial indexada descreve uma plataforma para encontrar clientes, conduzir a venda, organizar a execução e acompanhar o resultado de cada projeto. A página DarkAds apresenta o Code Makers como ferramenta independente prevista para apoiar o fluxo de criação. Não há confirmação de parceria, desconto, bônus ou acesso incluso; o texto deixa claro que o Code Makers não integra a compra do DarkAds e não é requisito para ela.
 
 ## Direito de arrependimento
 
