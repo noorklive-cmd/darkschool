@@ -14,7 +14,7 @@ DarkAds deve ter identidade própria. A Project Six serve como referência de or
 
 - **Oferta principal:** acesso ao material DarkAds por **R$ 33,30**, pagamento único.
 - **Acesso ao material comprado:** vitalício, conforme a oferta final e as condições publicadas no checkout.
-- **Comunidade:** entrada gratuita no Discord, com foco em conexão mútua entre participantes. O convite ainda será fornecido.
+- **Comunidade:** entrada gratuita no Discord, com foco em conexão mútua entre participantes. Convite: https://discord.gg/C8mddYaKgj.
 - **Sessão individual:** oferta separada e opcional, com duração mínima de uma hora. Preço, agenda e forma de contratação ainda serão definidos.
 - **Conteúdo:** pack de vídeos, automações e templates está em planejamento.
 - **Code Makers:** usar como ferramenta de apoio no fluxo de criação, se estiver disponível no ambiente, e apresentar a plataforma na página de vendas com link para o site oficial.
@@ -26,7 +26,6 @@ DarkAds deve ter identidade própria. A Project Six serve como referência de or
 
 - Quantidades de vídeos, imagens, templates, automações, módulos ou bônus.
 - Formato e organização finais do produto principal.
-- Convite do Discord.
 - URL exata do checkout.
 - Preço, agenda e checkout da sessão individual.
 - Meios de pagamento habilitados.
@@ -39,10 +38,10 @@ Não inventar resultados, alunos, faturamento, comissões, escassez, prazo de ac
 
 1. Hero com promessa responsável, público e CTA de compra por R$ 33,30.
 2. Apresentar a proposta como execução orientada por materiais (vídeos, automações e templates), com detalhes qualitativos até o inventário real ser definido.
-3. Seção clara da comunidade Discord gratuita e de seu propósito de conexão mútua. Convite configurável; não inventar.
+3. Seção clara da comunidade Discord gratuita e de seu propósito de conexão mútua. Usar o convite confirmado: https://discord.gg/C8mddYaKgj.
 4. Seção dedicada ao **Code Makers**, com link oficial e descrição factual da plataforma como ferramenta de apoio. Não dizer que é parceria, bônus, acesso incluso ou requisito para comprar DarkAds, a menos que isso seja confirmado.
 5. Oferta, duração do acesso aos materiais, meios de pagamento e preço consistentes com o checkout real.
-6. FAQ e informações de suporte; link de compra e convite ficam como campos pendentes até serem fornecidos.
+6. FAQ e informações de suporte; link de compra permanece pendente até ser fornecido; o convite da comunidade já está definido.
 7. Prova social só com materiais reais e autorização de uso.
 8. Garantia/reembolso com redação revisada para legislação e condições do checkout. Não afirmar que uma política da Project Six foi copiada ou validada. Para compra online no Brasil, respeitar o direito de arrependimento previsto no art. 49 do CDC.
 9. Design responsivo, acessível, rápido e navegável por teclado. Evitar promessas de renda garantida, resultado certo ou prazo de ganhos.
@@ -56,7 +55,7 @@ Não inventar resultados, alunos, faturamento, comissões, escassez, prazo de ac
 
 ## Próximos passos
 
-1. Receber o convite do Discord e a URL exata do checkout.
+1. Inserir e validar a URL exata do checkout.
 2. Fechar o inventário real e a organização dos vídeos, automações e templates.
 3. Confirmar meios de pagamento, suporte e condições comerciais.
 4. Montar a página em preview, revisar no celular e validar todos os links.
