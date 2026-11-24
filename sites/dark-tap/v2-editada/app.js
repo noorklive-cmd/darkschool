@@ -45,7 +45,6 @@ const extras = [
   ['Atualização de links','Consulte opções de atualização de destino ao configurar o cartão.','refresh']
 ];
 document.querySelectorAll('[data-icon]').forEach((node) => { node.innerHTML = svg(node.dataset.icon); });
-get('demo-chips').innerHTML = group.map((item) => '<li><i>' + svg(item.icon) + '</i>' + (item.chip || item.name) + '</li>').join('');
 const ticker = [...group.map((item) => item.chip || item.name), 'Eventos', 'Links personalizados'];
 get('ticker-content').innerHTML = [...ticker, ...ticker].map((name) => '<span>' + name.toUpperCase() + '<b aria-hidden="true">●</b></span>').join('');
 function tile(title, copy, icon, color, link = '') {
