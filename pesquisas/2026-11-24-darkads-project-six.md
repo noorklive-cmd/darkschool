@@ -1,46 +1,58 @@
 # Pesquisa inicial — DarkAds e Project Six
 
 **Data:** 24/11/2026  
-**Status:** referência inicial; não representa auditoria técnica nem validação de resultados comerciais.
+**Status:** consulta de referência visual e descrição do Code Makers; não é auditoria técnica nem validação de resultado comercial.
 
 ## Project Six
 
-Referência consultada: https://p6.chat/
+Fonte consultada: https://p6.chat/
 
-O usuário quer estudar conceitos de visual e experiência para orientar uma identidade própria do DarkAds. O uso deve se limitar a padrões gerais de apresentação e fluxo: hierarquia, ritmo de seções, clareza da oferta, experiência mobile e organização de conteúdo. Não reutilizar marca, copy, código, mídia, depoimentos ou componentes proprietários.
+A página atual apresenta navegação por etapas, explica a oferta em seções sequenciadas, usa uma demonstração visual de produto, separa comunidade de preço e termina com dúvidas frequentes. Para DarkAds, esses são somente princípios gerais de hierarquia, ritmo, clareza de oferta e experiência mobile. A direção editorial e os componentes foram desenvolvidos para a identidade DarkAds.
 
-Vídeo enviado: https://youtu.be/Ucp2NjKdtEk?is=qEdF-j_8zSdNNCrU
+Não reutilizar nome, marca, copy, layout distintivo, código, imagens, vídeos, depoimentos ou provas sociais do Project Six.
 
-**Limitação:** o player permaneceu carregando durante a consulta e não foi possível revisar o conteúdo ou as legendas. Tratar como referência pendente de análise.
+## Vídeo enviado pelo responsável
+
+https://youtu.be/Ucp2NjKdtEk?is=qEdF-j_8zSdNNCrU
+
+A ferramenta de consulta não conseguiu buscar o vídeo e retornou `DisabledError`. O vídeo e as legendas não foram analisados. Revisão do conteúdo permanece pendente.
 
 ## Code Makers
 
-Fonte oficial consultada: https://www.codemakers.com.br/
+Fonte oficial: https://www.codemakers.com.br/
 
-A solicitação do responsável é usar Code Makers no fluxo e garantir presença na página de vendas. A apresentação na página deve ser factual, apontar para o site oficial e deixar claro que é uma ferramenta de apoio. Não afirmar parceria, inclusão no pacote, desconto ou necessidade de assinatura sem confirmação.
+A página oficial indexada descreve uma plataforma para encontrar clientes, conduzir a venda, organizar a execução e acompanhar o resultado de cada projeto. A página DarkAds apresenta o Code Makers como ferramenta independente de apoio usada no fluxo de criação. Não há confirmação de parceria, desconto, bônus ou acesso incluso; o texto deixa claro que o Code Makers não integra a compra do DarkAds e não é requisito para ela.
 
-Antes de publicar, revisar o site oficial para atualizar a descrição da plataforma.
+## Direito de arrependimento
 
-## Política de reembolso
+Fonte legal: Código de Defesa do Consumidor, art. 49: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
 
-O responsável mencionou usar a política da Project Six como referência. Os termos públicos consultados em https://app.p6.chat/terms não ofereceram base clara para afirmar uma promessa comercial específica de reembolso de 7 dias. Portanto, não atribuir essa política à Project Six nem copiar seus termos.
+A contratação fora do estabelecimento comercial pode ser desfeita no prazo de 7 dias contado da assinatura ou do recebimento do produto/serviço, conforme o caso. Os valores eventualmente pagos devem ser devolvidos nos termos da legislação aplicável. Não atribuir essa regra à política do Project Six nem prometer condição comercial adicional sem confirmação.
 
-A página DarkAds deve respeitar o direito de arrependimento aplicável às compras online no Brasil (CDC, art. 49): https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm. A redação final deve ser coerente com o checkout e as condições do produto.
+## Decisões comerciais confirmadas
 
-## Decisões do responsável
+- Oferta principal: R$ 33,30 em pagamento único.
+- Acesso vitalício ao material adquirido, conforme checkout.
+- Discord gratuito para conexão mútua.
+- Sessão individual separada, duração mínima de uma hora; preço e contratação pendentes.
+- Materiais planejados em categorias de vídeos, automações e templates; composição e quantidades ainda não definidas.
+- O checkout existe, mas o endereço exato e os meios ativos não foram fornecidos.
+- Nenhuma renda, vendas, comissão, aprovação de anúncios ou prazo de resultado pode ser prometido.
 
-- Oferta principal a R$ 33,30.
-- Acesso vitalício ao material comprado.
-- Discord gratuito, focado em conexão mútua; link ainda pendente.
-- Sessão individual separada, com duração mínima de uma hora; preço pendente.
-- Conteúdo planejado com vídeos, automações e templates; quantidades e formato pendentes.
-- Checkout já existe, mas o endereço exato ainda não foi fornecido para este registro.
-- Meios de pagamento só devem ser anunciados depois de conferidos no checkout.
+## Estado da prévia
 
-## Distinção entre fatos e hipóteses
+- Fonte: [sites/darkads/index.html](../sites/darkads/index.html).
+- A página está registrada no repositório Dark School em `sites/darkads/`.
+- CTA de compra desativado até receber o checkout real.
+- Sem anúncio de formas de pagamento.
+- Ação do Discord oculta até confirmar que o link de convite está ativo. Existe um URL em registros anteriores, porém sua atividade não foi validada nesta sessão.
+- Sessão individual escondida.
+- O produto ainda não foi publicado nem implantado em produção.
+- A verificação visual em navegador desktop/mobile ficou bloqueada: o navegador remoto não conseguiu acessar o preview local (`ERR_CONNECTION_REFUSED`) e bloqueou navegação `file://`. Não declarar revisão visual como concluída.
 
-**Confirmado pelo responsável:** decisões comerciais listadas acima.
+## Próximos passos
 
-**Hipótese de design para explorar:** identidade editorial escura, alto contraste, vermelho usado com moderação em ações e referências gerais de organização visual da Project Six. Deve ser validada em preview.
-
-**Não confirmado:** número de materiais, resultados de alunos, volume de vendas, ganhos, depoimentos, bônus, escassez, Code Makers incluso no produto ou parceria entre as marcas.
+1. Receber e validar checkout, formas de pagamento e convite do Discord.
+2. Confirmar o inventário e a organização do produto.
+3. Abrir uma prévia acessível ao navegador para a revisão visual de desktop e mobile.
+4. Revisar os dados legais, suporte e condições comerciais antes da aprovação de publicação.
