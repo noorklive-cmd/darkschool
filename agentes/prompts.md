@@ -14,7 +14,7 @@ Identifique o código de origem e a versão publicada. Faça a mudança no camin
 
 ## Prompts por projeto
 
-- [DarkAds v1 — página de vendas, comunidade, Code Makers e critérios de implementação](prompts/darkads-v1.md)
+- [DarkAds v1 — página de vendas, Code Makers e critérios de implementação](prompts/darkads-v1.md) — checkout e convite do Discord devem ser confirmados antes de ativar as ações.
 
 ## Atendimento comercial
 
