@@ -12,4 +12,8 @@ Leia o briefing e a direção visual. Proponha uma hierarquia com uma ação pri
 
 Identifique o código de origem e a versão publicada. Faça a mudança no caminho existente, valide no celular e teste links, navegação por teclado e estados relevantes. Entregue um preview e registre os arquivos modificados e as limitações encontradas.
 
+## Atendimento comercial
+
+- [SDR de IA para venda de sites](sdr-ia-sites.md): piloto de triagem para contatos interessados, com limites, prompt e passagem para Alex.
+
 Referência reutilizável: [Agente Workbench](https://github.com/noorklive-cmd/Agente-Workbench).
