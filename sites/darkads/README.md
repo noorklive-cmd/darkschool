@@ -22,3 +22,9 @@
 - Code Makers: https://www.codemakers.com.br/ — homepage atual apresenta organização de clientes, vendas, execução e resultados de projetos.
 - CDC, art. 49: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
 - Vídeo de referência: https://youtu.be/Ucp2NjKdtEk?is=qEdF-j_8zSdNNCrU — indisponível para reprodução nesta sessão.
+
+## Limitações desta revisão
+
+- Não havia integração ou sessão do Code Makers disponível; somente a página pública foi consultada.
+- O navegador remoto não conseguiu acessar o servidor local, então a revisão visual em desktop e mobile não foi concluída.
+- A página está em código no repositório. O registro de Site continua privado e sem deploy; não há URL de preview publicada.
