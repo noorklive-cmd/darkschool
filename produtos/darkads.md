@@ -1,62 +1,68 @@
 # DarkAds — escopo inicial
 
-**Status:** definição inicial; entregáveis e página ainda em construção.  
+**Status:** primeira página em prévia privada; produto e checkout ainda em finalização.  
 **Responsável:** Alex Santos.  
 **Última atualização:** 24/11/2026.
 
 ## Objetivo
 
-Criar uma oferta de entrada sobre marketing digital e renda extra, acompanhada por uma comunidade gratuita no Discord. A proposta deve ensinar um caminho aplicável usando vídeos, automações e templates, sem vender apenas ferramentas isoladas. A frase de direção é: **“vender o caminho, não a pá”**.
+Criar uma oferta de entrada sobre marketing digital e renda extra, acompanhada por uma comunidade gratuita no Discord. A proposta é ensinar um caminho de execução apoiado por vídeos, automações e templates: **“vender o caminho, não a pá”**.
 
-DarkAds deve ter identidade própria. A Project Six serve como referência de organização, ritmo e experiência; não copiar textos, identidade, código, imagens, vídeos, depoimentos ou componentes proprietários.
+DarkAds terá identidade própria. A Project Six é referência para princípios gerais de hierarquia, ritmo, organização de oferta e experiência mobile. Não reutilizar texto, identidade, código, mídia, depoimentos ou componentes distintivos.
 
 ## Decisões confirmadas
 
-- **Oferta principal:** acesso ao material DarkAds por **R$ 33,30**, pagamento único.
-- **Acesso ao material comprado:** vitalício, conforme a oferta final e as condições publicadas no checkout.
-- **Comunidade:** entrada gratuita no Discord, com foco em conexão mútua entre participantes. Convite: https://discord.gg/C8mddYaKgj.
-- **Sessão individual:** oferta separada e opcional, com duração mínima de uma hora. Preço, agenda e forma de contratação ainda serão definidos.
-- **Conteúdo:** pack de vídeos, automações e templates está em planejamento.
-- **Code Makers:** usar como ferramenta de apoio no fluxo de criação, se estiver disponível no ambiente, e apresentar a plataforma na página de vendas com link para o site oficial.
-- **Identidade visual:** base editorial escura, alto contraste e vermelho como sinal de ação. Valores de referência: fundo #080808, texto #F5F5F5, texto secundário #A1A1AA, bordas #262626 e vermelho #E11D2E.
-- **Checkout:** já existe segundo o responsável pelo projeto; inserir somente o link exato fornecido. Não criar URL fictícia.
-- **Pagamento:** mostrar apenas os meios efetivamente disponíveis no checkout atual.
+- **Oferta principal:** R$ 33,30, em pagamento único.
+- **Acesso:** vitalício ao material DarkAds comprado, conforme as condições exibidas no checkout.
+- **Comunidade:** gratuita, no Discord, com foco em conexão mútua. Um endereço de convite consta em registro anterior do projeto, mas não pôde ser verificado como ativo nesta revisão; a ação de entrada fica oculta até a confirmação.
+- **Sessão individual:** oferta separada e opcional, com duração mínima de uma hora. Preço, agenda e forma de contratação não foram definidos. Omitir do primeiro lançamento.
+- **Materiais:** categorias planejadas de vídeos, automações e templates. Quantidades, composição e formato final dependem do Project Six e da finalização do produto.
+- **Code Makers:** ferramenta independente usada como apoio no processo de criação. A apresentação deve se limitar ao que a página oficial confirma; não dizer que há parceria, acesso incluso, desconto ou exigência de contratação.
+- **Direção visual:** editorial escura, alto contraste e vermelho de ação usado com moderação. Referência: fundo #080808, superfícies #111111, texto #F5F5F5, texto secundário #A1A1AA, borda #262626 e vermelho #E11D2E.
+- **Checkout:** existe, segundo o responsável, mas a URL exata não foi fornecida. Não criar CTA funcional ou URL de suposição.
+- **Meios de pagamento:** não anunciar até conferir o checkout.
 
 ## Em aberto — não preencher por suposição
 
-- Quantidades de vídeos, imagens, templates, automações, módulos ou bônus.
-- Formato e organização finais do produto principal.
-- URL exata do checkout.
-- Preço, agenda e checkout da sessão individual.
-- Meios de pagamento habilitados.
-- Política comercial de reembolso além do direito legal aplicável.
-- Prints, depoimentos, notificações e outros materiais de prova social.
+- URL exata do checkout e métodos de pagamento ativos.
+- Inventário e organização finais de vídeos, automações e templates.
+- Convite ativo do Discord.
+- Preço, agenda e forma de contratação da sessão individual.
+- Canal de suporte, políticas comerciais e dados legais além do que já foi confirmado.
+- Provas sociais, prints e materiais de demonstração autorizados.
 
-Não inventar resultados, alunos, faturamento, comissões, escassez, prazo de acesso a serviços externos ou quantidade de conteúdo. O acesso vitalício é referente ao material DarkAds comprado; não prometer disponibilidade vitalícia do Discord nem de plataformas de terceiros.
+Não inventar resultados, alunos, faturamento, comissões, escassez, bônus ou quantidade de materiais. O acesso vitalício se refere ao material comprado; não prometer disponibilidade vitalícia do Discord ou de plataformas de terceiros.
 
-## Página de vendas — requisitos
+## Página v1
 
-1. Hero com promessa responsável, público e CTA de compra por R$ 33,30.
-2. Apresentar a proposta como execução orientada por materiais (vídeos, automações e templates), com detalhes qualitativos até o inventário real ser definido.
-3. Seção clara da comunidade Discord gratuita e de seu propósito de conexão mútua. Usar o convite confirmado: https://discord.gg/C8mddYaKgj.
-4. Seção dedicada ao **Code Makers**, com link oficial e descrição factual da plataforma como ferramenta de apoio. Não dizer que é parceria, bônus, acesso incluso ou requisito para comprar DarkAds, a menos que isso seja confirmado.
-5. Oferta, duração do acesso aos materiais, meios de pagamento e preço consistentes com o checkout real.
-6. FAQ e informações de suporte; link de compra permanece pendente até ser fornecido; o convite da comunidade já está definido.
-7. Prova social só com materiais reais e autorização de uso.
-8. Garantia/reembolso com redação revisada para legislação e condições do checkout. Não afirmar que uma política da Project Six foi copiada ou validada. Para compra online no Brasil, respeitar o direito de arrependimento previsto no art. 49 do CDC.
-9. Design responsivo, acessível, rápido e navegável por teclado. Evitar promessas de renda garantida, resultado certo ou prazo de ganhos.
+Arquivo-fonte: [sites/darkads/index.html](../sites/darkads/index.html). Estado e pendências: [sites/darkads/README.md](../sites/darkads/README.md).
 
-## Referências verificadas em 24/11/2026
+A primeira versão usa uma prévia visual identificada como ilustrativa, categorias gerais de conteúdo, status privado e sem deploy de produção. O CTA exibe o preço correto, mas permanece desativado até conectar e validar o checkout. O convite do Discord não aparece enquanto a atividade do link não for confirmada.
 
-- Project Six: https://p6.chat/ — referência de direção e estrutura, sem autorização para reprodução literal.
-- Vídeo enviado pelo responsável: https://youtu.be/Ucp2NjKdtEk?is=qEdF-j_8zSdNNCrU — a reprodução não carregou durante a consulta; revisar em ambiente com acesso.
-- Code Makers: https://www.codemakers.com.br/ — plataforma deve ser citada e apresentada como ferramenta de apoio; conferir descrição atual antes de publicar.
-- CDC, art. 49 (Planalto): https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
+A página apresenta:
+
+1. Hero com proposta responsável e CTA de prévia.
+2. Explicação do caminho entre estudo, organização e execução.
+3. Perfil de adequação sem promessa de ganho rápido.
+4. Prévia demonstrativa identificada; sem inventar materiais existentes.
+5. Categorias de entregáveis sem números nem módulos fechados.
+6. Comunidade gratuita descrita sem ação de entrada até confirmar convite.
+7. Code Makers como ferramenta independente de apoio.
+8. Oferta por R$ 33,30, pagamento único e acesso vitalício ao material.
+9. Direito de arrependimento aplicável às compras online, sem atribuir a política à Project Six.
+10. Sessão individual omitida até que os dados comerciais sejam definidos.
+
+## Fontes verificadas em 24/11/2026
+
+- Project Six: https://p6.chat/ — consultada para padrões gerais de navegação, ordem de seções, demonstração visual, comunidade, oferta e FAQ. Nenhuma alegação da página foi reutilizada.
+- Code Makers: https://www.codemakers.com.br/ — página oficial indexada com a descrição de plataforma que ajuda a encontrar clientes, conduzir vendas, organizar execução e acompanhar resultados dos projetos.
+- Vídeo de referência: https://youtu.be/Ucp2NjKdtEk?is=qEdF-j_8zSdNNCrU — a consulta de reprodução falhou com “DisabledError”; o conteúdo do vídeo não foi analisado.
+- CDC, art. 49: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm — prevê prazo de arrependimento de 7 dias para contratação fora do estabelecimento comercial e devolução dos valores pagos, conforme a lei.
 
 ## Próximos passos
 
-1. Inserir e validar a URL exata do checkout.
-2. Fechar o inventário real e a organização dos vídeos, automações e templates.
-3. Confirmar meios de pagamento, suporte e condições comerciais.
-4. Montar a página em preview, revisar no celular e validar todos os links.
-5. Publicar somente após aprovação do conteúdo e conferência do checkout.
+1. Receber a URL exata do checkout e conferir o destino e meios habilitados.
+2. Fechar o inventário real e a organização dos materiais.
+3. Confirmar o link de convite do Discord e o canal de suporte.
+4. Conferir acessibilidade e experiência visual em desktop e mobile assim que houver uma prévia de navegador utilizável.
+5. Revisar a página com os dados finais e obter aprovação antes de qualquer publicação.
