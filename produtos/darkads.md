@@ -66,3 +66,9 @@ A página apresenta:
 3. Confirmar o link de convite do Discord e o canal de suporte.
 4. Conferir acessibilidade e experiência visual em desktop e mobile assim que houver uma prévia de navegador utilizável.
 5. Revisar a página com os dados finais e obter aprovação antes de qualquer publicação.
+
+## Limitações da execução desta revisão
+
+- Não havia conector nem sessão de trabalho do Code Makers disponível. A descrição foi conferida somente pela página pública oficial; nenhuma conta ou recurso autenticado foi usado.
+- O navegador de QA remoto não conseguiu acessar o servidor local da prévia. Não foi possível fazer inspeção visual em desktop ou mobile nesta sessão.
+- A página está versionada no repositório; nenhum deploy de produção foi feito.
