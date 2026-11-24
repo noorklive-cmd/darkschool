@@ -93,7 +93,7 @@ background:radial-gradient(ellipse at 104% 68%,#140b2b 0 31%,#9b5ead 32%,#43285f
 .destination-seal {
   width: min(100%, 420px);
   container-type: inline-size;
-  margin-block: clamp(26px, 4vw, 40px) clamp(32px, 5vw, 52px);
+  margin-block: 18px 0;
   padding-block: 5px;
   overflow: hidden;
   border: 1px solid #ffffff24;
@@ -141,3 +141,6 @@ background:radial-gradient(ellipse at 104% 68%,#140b2b 0 31%,#9b5ead 32%,#43285f
     letter-spacing: .15em;
   }
 }
+
+.steps li { min-width: 0; }
+.demo-copy .scroll-hint { margin-top: 24px; }
