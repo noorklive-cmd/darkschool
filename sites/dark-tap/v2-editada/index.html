@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808"><meta name="description" content="Dark Tap by Dark School. Cartão NFC configurado sob medida para levar seus clientes ao destino certo.">
+<title>Dark Tap by Dark School — NFC sob medida</title>
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header class="nav"><a href="#top" class="brand"><i data-icon="nfc"></i><span>DARK<br>TAP</span></a><nav id="menu" aria-label="Navegação"><a href="#demonstracao">Demonstração</a><a href="#possibilidades">Possibilidades</a><a href="#como-funciona">Como funciona</a><a href="#faq">Dúvidas</a></nav><a class="button primary nav-cta" href="#personalizacao">Configurar meu NFC</a><button class="toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><i data-icon="menu"></i></button></header>
+<main id="top">
+<section class="hero">
+
+<div class="chamber"><div class="intro wrap">
+<div class="spec"><div class="eyebrow">NFC configurado sob medida</div><p>Dark Tap · by Dark School</p></div>
+<div class="hero-copy"><h1>Encoste. Ative.<br><em class="warm">Conecte.</em></h1><p>Transforme um simples toque em acesso direto às suas avaliações no Google, Instagram, WhatsApp, Wi-Fi, cardápio ou portfólio.</p><div class="actions"><a class="button primary" href="#personalizacao">Configurar meu NFC <span>↗</span></a><a class="button" href="#demonstracao">Ver demonstração</a></div></div>
+</div>
+</div>
+<div id="demonstracao" class="demo-track">
+<div class="demo wrap">
+<div class="demo-copy"><div class="eyebrow">Demonstração</div><h2>Encoste. A tela acende.<br><em>O destino abre.</em></h2><p>Um toque leva seu cliente às avaliações no Google ou a outro destino que você escolher.</p><div class="eyebrow scroll-hint">Role para aproximar o celular do cartão</div></div>
+<div class="scene" aria-label="Simulação de aproximação NFC">
+<div class="aura"></div><div class="signal"></div>
+<div class="phone-shell">
+<div class="side-keys" aria-hidden="true"></div>
+<div class="glass">
+<div class="lens" aria-hidden="true"></div>
+<div class="system-icons" aria-hidden="true"><i data-icon="wifi"></i><span></span></div>
+<div id="lock-screen" class="lock-screen">
+<svg class="padlock" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 10V7a4 4 0 0 1 8 0v3"/><rect x="5" y="10" width="14" height="11" rx="3"/></svg>
+<small id="local-date"></small><time id="local-time"></time>
+<div class="nfc-note"><i data-icon="nfc"></i><span id="phone-state">Aproxime o celular</span></div>
+</div>
+<div id="unlocked-screen" class="unlocked-screen" hidden>
+<div class="ig-mark"><i data-icon="insta"></i></div>
+<small>INSTAGRAM</small><strong>Alex Designer</strong><span>@alexdes1gner_</span>
+<a href="https://www.instagram.com/alexdes1gner_/" target="_blank" rel="noopener">Abrir perfil</a>
+</div><div class="home-bar" aria-hidden="true"></div></div></div>
+<div class="tap-card"><i data-icon="eye"></i><strong>DARK TAP</strong></div>
+</div></div></div>
+</section>
+<div class="ticker" aria-label="Destinos disponíveis"><div id="ticker-content"></div></div>
+<section id="possibilidades" class="section"><div class="wrap"><div class="eyebrow">Um toque, uma ação</div><h2>O destino é o que você <em>decidir</em>.</h2><p>Cada Dark Tap é configurado para a ação que você escolher.</p><div class="tiles" id="destinations"></div></div></section>
+<section class="section"><div class="wrap"><div class="eyebrow">Feito para o seu negócio</div><h2>Onde tem gente chegando, o Dark Tap <em class="warm">trabalha</em>.</h2><div class="tiles use-tiles" id="uses"></div></div></section>
+<section id="como-funciona" class="section"><div class="wrap"><div class="eyebrow">Como funciona</div><h2>Três passos entre a ideia e o <em class="warm">primeiro toque</em>.</h2><ol class="steps"><li><h3>Você envia sua ideia</h3><p>Conte o que quer ativar e envie a identidade da sua marca.</p></li><li><h3>Alex configura seu Dark Tap</h3><p>Você aprova a arte, a mensagem e o destino antes da gravação do cartão.</p></li><li><h3>Seu cliente encosta e acessa</h3><p>Ao aproximar um celular compatível, o cliente pode abrir o destino configurado.</p></li></ol></div></section>
+<section id="personalizacao" class="section"><div class="wrap"><div class="eyebrow">Personalização</div><h2>Seu NFC, do seu <em>jeito</em>.</h2><div class="config-layout">
+<div class="config"><div class="config-head"><span>Configurador</span><span>Prévia</span></div><div class="preview"><div><i data-icon="eye"></i><span>DARK TAP</span></div></div><div class="target-preview" aria-live="polite"><i id="target-icon"></i><div><strong id="target-title"></strong><small id="target-example"></small></div></div>
+<fieldset><legend>Destino</legend><div class="choices" id="choices"></div></fieldset><fieldset><legend>Aura</legend><div class="choices" id="colors"></div></fieldset>
+<label for="message">Mensagem de WhatsApp</label><input id="message" maxlength="220" value="Olá! Vim pelo Dark Tap e quero agendar."><p class="message-preview">Prévia: <span id="message-preview"></span></p><a class="button primary" id="send" href="#contato">Configurar meu NFC ↗</a></div><div class="tiles extras" id="extras"></div></div></div></section>
+<section id="faq" class="section"><div class="wrap"><div class="eyebrow">Perguntas frequentes</div><h2>Tudo o que você quer saber <em>antes do primeiro toque</em>.</h2><div class="faq"><canvas id="waves" width="1000" height="300" aria-hidden="true"></canvas><div class="questions">
+<details name="faq" open><summary>Como funciona a personalização?</summary><p>Você conta o que quer ativar e envia a identidade da sua marca. Alex define o destino com você, prepara a arte e envia uma prévia para aprovação antes da gravação do chip.</p></details>
+<details name="faq"><summary>Qual é o prazo de entrega?</summary><p>O prazo depende da arte, da configuração e do envio. Você confirma a data com Alex pelo WhatsApp.</p></details>
+<details name="faq"><summary>O NFC é compatível com quais celulares?</summary><p>Funciona em celulares com leitura de NFC habilitada. Para aparelhos sem NFC, você pode solicitar um QR Code de apoio.</p></details>
+</div></div></div></section>
+<section id="contato" class="section contact"><div class="wrap"><div class="eyebrow">Configuração sob medida</div><h2>Seu próximo cliente está a um toque de distância.</h2><p>Conte o que você quer ativar. A configuração é feita sob medida para sua marca, do destino à arte do cartão.</p><a class="button primary wa" href="https://wa.me/5511940877072"><i data-icon="chat"></i> Falar com Alex no WhatsApp</a><div class="eyebrow contact-note">Atendimento direto no WhatsApp Business</div></div></section>
+</main>
+<footer class="section"><div class="wrap"><a href="#top" class="brand"><i data-icon="nfc"></i>DARK TAP</a><p>by Dark School<br>NFC configurado sob medida.</p><div class="footer-links"><a class="wa" href="https://wa.me/5511940877072"><i data-icon="chat"></i> WhatsApp</a><a href="https://www.instagram.com/"><i data-icon="insta"></i> Instagram</a><a href="#top" class="eyebrow">Voltar ao topo</a></div><a href="#personalizacao" class="button">Configurar meu NFC</a><div class="copyright eyebrow">© 2026 Dark Tap · by Dark School</div></div></footer>
+</body></html>
