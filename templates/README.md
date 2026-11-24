@@ -21,3 +21,7 @@
 - Decisão e motivo
 - Evidências
 - Arquivos afetados e condição de revisão
+
+## Teste de atendimento
+
+- [Registro de teste do SDR de IA](registro-sdr-ia.md): cenários, pontuação, falhas críticas e decisão de seguir, ajustar ou arquivar.
