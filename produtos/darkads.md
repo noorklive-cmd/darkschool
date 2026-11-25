@@ -1,74 +1,50 @@
 # DarkAds — escopo inicial
 
-**Status:** primeira página em prévia privada; produto e checkout ainda em finalização.  
+**Status:** demo visual privada publicada; produto e checkout ainda em finalização.  
 **Responsável:** Alex Santos.  
 **Última atualização:** 25/11/2026.
 
 ## Objetivo
 
-Criar uma oferta de entrada sobre marketing digital e renda extra, acompanhada por uma comunidade gratuita no Discord. A proposta é ensinar um caminho de execução apoiado por vídeos, automações e templates: **“vender o caminho, não a pá”**.
+Criar uma oferta de entrada sobre marketing digital acompanhada por uma comunidade gratuita no Discord. A proposta é vender o caminho de execução — apoiado por categorias planejadas de vídeos, automações e templates — em vez de uma coleção avulsa de ferramentas: **“vender o caminho, não a pá”**.
 
-DarkAds terá identidade própria. A Project Six é referência para princípios gerais de hierarquia, ritmo, organização de oferta e experiência mobile. Não reutilizar texto, identidade, código, mídia, depoimentos ou componentes distintivos.
+DarkAds terá identidade própria. Project Six, associado publicamente ao fundador Night15k, é referência apenas para princípios gerais de hierarquia, ritmo e organização da experiência. Copy, visual e componentes desta demo foram desenvolvidos para DarkAds; não reutilizar marca, textos, mídia, depoimentos ou layout distintivo da referência.
 
 ## Decisões confirmadas
 
-- **Oferta principal:** R$ 33,30, em pagamento único.
-- **Acesso:** vitalício ao material DarkAds comprado, conforme as condições exibidas no checkout.
-- **Comunidade:** gratuita, no Discord, com foco em conexão mútua. Um endereço de convite consta em registro anterior do projeto, mas não pôde ser verificado como ativo nesta revisão; a ação de entrada fica oculta até a confirmação.
-- **Sessão individual:** oferta separada e opcional, com duração mínima de uma hora. Preço, agenda e forma de contratação não foram definidos. Omitir do primeiro lançamento.
-- **Materiais:** categorias planejadas de vídeos, automações e templates. Quantidades, composição e formato final dependem do Project Six e da finalização do produto.
-- **Code Makers:** ferramenta independente prevista como apoio no processo de criação. A apresentação deve se limitar ao que a página oficial confirma; não dizer que há parceria, acesso incluso, desconto ou exigência de contratação.
-- **Direção visual:** editorial escura, alto contraste e vermelho de ação usado com moderação. Referência: fundo #080808, superfícies #111111, texto #F5F5F5, texto secundário #A1A1AA, borda #262626 e vermelho #E11D2E.
-- **Pagamentos:** InfinitePay será usado para finalizar as vendas. O checkout oficial ainda está sendo criado; sua URL não está disponível.
-- **Meios de pagamento:** não anunciar até conferir o checkout.
+- Oferta principal: **R$ 33,30**, pagamento único.
+- Acesso vitalício ao material DarkAds adquirido, conforme as condições do checkout.
+- Comunidade Discord gratuita, focada em conexão mútua. O convite fornecido precisa ser confirmado antes de abrir a entrada na página.
+- Sessão individual separada, opcional, duração mínima de uma hora; preço, agenda e contratação pendentes. Não aparece na oferta da demo.
+- Categorias planejadas: vídeos, automações e templates. Quantidades, composição e formato final ainda não definidos.
+- Code Makers: ferramenta independente citada como apoio ao processo. Não inclusa, não obrigatória e sem parceria ou desconto anunciados.
+- Direção visual: editorial escura, alto contraste, acento vermelho moderado; #080808, #111111, #F5F5F5, #A1A1AA, #262626, #E11D2E.
+- InfinitePay será usada no checkout; URL e meios de pagamento não informados ainda.
+- Sem promessas de renda, comissões, vendas ou prazo de resultado.
 
-## Em aberto — não preencher por suposição
+## Demo
 
-- Finalizar o checkout oficial na InfinitePay; inserir e validar a URL, os meios de pagamento ativos e o destino pós-compra.
-- Inventário e organização finais de vídeos, automações e templates.
-- Convite ativo do Discord.
-- Preço, agenda e forma de contratação da sessão individual.
-- Canal de suporte, políticas comerciais e dados legais além do que já foi confirmado.
-- Provas sociais, prints e materiais de demonstração autorizados.
+- Página de vendas: [sites/darkads/index.html](../sites/darkads/index.html)
+- Área de membros: [sites/darkads/membros.html](../sites/darkads/membros.html)
+- Notas e pendências: [sites/darkads/README.md](../sites/darkads/README.md)
+- Site privado: https://darkads-v1.muddybride16.chatgpt.site
 
-Não inventar resultados, alunos, faturamento, comissões, escassez, bônus ou quantidade de materiais. O acesso vitalício se refere ao material comprado; não prometer disponibilidade vitalícia do Discord ou de plataformas de terceiros.
+A landing inclui navegação por seções, CTA desativado, categorias sem inventário inventado, comunidade, bloco independente do Code Makers, preço, FAQ e informação de direito de arrependimento legal. A área de membros é um protótipo visual com interação demonstrativa; não há autenticação, conteúdo final, entitlement de compra ou backend conectado.
 
-## Página v1
+## O que falta antes da venda
 
-Arquivo-fonte: [sites/darkads/index.html](../sites/darkads/index.html). Estado e pendências: [sites/darkads/README.md](../sites/darkads/README.md).
+1. Finalizar o checkout InfinitePay; inserir a URL, confirmar formas de pagamento e validar o fluxo e a entrega pós-compra.
+2. Fechar inventário real e sequência dos materiais.
+3. Implementar autenticação, proteção e hospedagem dos conteúdos, com acesso condicionado à confirmação da compra.
+4. Confirmar o convite Discord, canal de suporte, dados legais e políticas comerciais.
+5. Obter provas sociais e assets reais/autorizados, se houver.
+6. Definir a sessão individual separada, se for ofertada.
 
-A primeira versão usa uma prévia visual identificada como ilustrativa, categorias gerais de conteúdo, status privado e sem deploy de produção. O CTA exibe o preço correto, mas permanece desativado até concluir o checkout oficial na InfinitePay, inserir a URL e validar o destino. O convite do Discord não aparece enquanto a atividade do link não for confirmada.
+## Pesquisa de referência
 
-A página apresenta:
+- Project Six: https://p6.chat/ — referência de padrões gerais; ver [pesquisa](../pesquisas/2026-11-24-darkads-project-six.md).
+- Code Makers: https://www.codemakers.com.br/
+- CDC, art. 49: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
+- Vídeo de referência enviado: https://youtu.be/Ucp2NjKdtEk?is=qEdF-j_8zSdNNCrU — não analisado.
 
-1. Hero com proposta responsável e CTA de prévia.
-2. Explicação do caminho entre estudo, organização e execução.
-3. Perfil de adequação sem promessa de ganho rápido.
-4. Prévia demonstrativa identificada; sem inventar materiais existentes.
-5. Categorias de entregáveis sem números nem módulos fechados.
-6. Comunidade gratuita descrita sem ação de entrada até confirmar convite.
-7. Code Makers como ferramenta independente de apoio.
-8. Oferta por R$ 33,30, pagamento único e acesso vitalício ao material.
-9. Direito de arrependimento aplicável às compras online, sem atribuir a política à Project Six.
-10. Sessão individual omitida até que os dados comerciais sejam definidos.
-
-## Fontes verificadas em 24/11/2026
-
-- Project Six: https://p6.chat/ — consultada para padrões gerais de navegação, ordem de seções, demonstração visual, comunidade, oferta e FAQ. Nenhuma alegação da página foi reutilizada.
-- Code Makers: https://www.codemakers.com.br/ — página oficial indexada com a descrição de plataforma que ajuda a encontrar clientes, conduzir vendas, organizar execução e acompanhar resultados dos projetos.
-- Vídeo de referência: https://youtu.be/Ucp2NjKdtEk?is=qEdF-j_8zSdNNCrU — a consulta de reprodução falhou com “DisabledError”; o conteúdo do vídeo não foi analisado.
-- CDC, art. 49: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm — prevê prazo de arrependimento de 7 dias para contratação fora do estabelecimento comercial e devolução dos valores pagos, conforme a lei.
-
-## Próximos passos
-
-1. Ao concluir a página de vendas/destino, finalizar a criação do checkout na InfinitePay, inserir a URL exata e conferir pagamento, destino pós-compra e meios habilitados.
-2. Fechar o inventário real e a organização dos materiais.
-3. Confirmar o link de convite do Discord e o canal de suporte.
-4. Conferir acessibilidade e experiência visual em desktop e mobile assim que houver uma prévia de navegador utilizável.
-5. Revisar a página com os dados finais e obter aprovação antes de qualquer publicação.
-
-## Limitações da execução desta revisão
-
-- Não havia conector nem sessão de trabalho do Code Makers disponível. A descrição foi conferida somente pela página pública oficial; nenhuma conta ou recurso autenticado foi usado.
-- O navegador de QA remoto não conseguiu acessar o servidor local da prévia. Não foi possível fazer inspeção visual em desktop ou mobile nesta sessão.
-- A página está versionada no repositório; nenhum deploy de produção foi feito.
+Não inventar alunos, vendas, faturamento, escassez, bônus ou quantidade de materiais. Direito de arrependimento explicado como disposição legal, não como política copiada da Project Six.
