@@ -36,14 +36,14 @@ A contratação fora do estabelecimento comercial pode ser desfeita no prazo de 
 - Discord gratuito para conexão mútua.
 - Sessão individual separada, duração mínima de uma hora; preço e contratação pendentes.
 - Materiais planejados em categorias de vídeos, automações e templates; composição e quantidades ainda não definidas.
-- O checkout existe, mas o endereço exato e os meios ativos não foram fornecidos.
+- InfinitePay será usado para os pagamentos; o checkout oficial está sendo criado. URL e meios ativos permanecem pendentes.
 - Nenhuma renda, vendas, comissão, aprovação de anúncios ou prazo de resultado pode ser prometido.
 
 ## Estado da prévia
 
 - Fonte: [sites/darkads/index.html](../sites/darkads/index.html).
 - A página está registrada no repositório Dark School em `sites/darkads/`.
-- CTA de compra desativado até receber o checkout real.
+- CTA de compra desativado até concluir o checkout oficial da InfinitePay e conectar a URL real.
 - Sem anúncio de formas de pagamento.
 - Ação do Discord oculta até confirmar que o link de convite está ativo. Existe um URL em registros anteriores, porém sua atividade não foi validada nesta sessão.
 - Sessão individual escondida.
@@ -52,7 +52,7 @@ A contratação fora do estabelecimento comercial pode ser desfeita no prazo de 
 
 ## Próximos passos
 
-1. Receber e validar checkout, formas de pagamento e convite do Discord.
+1. Concluir checkout oficial na InfinitePay ao finalizar a página de vendas/destino; inserir URL e validar os meios de pagamento e o destino pós-compra.
 2. Confirmar o inventário e a organização do produto.
 3. Abrir uma prévia acessível ao navegador para a revisão visual de desktop e mobile.
 4. Revisar os dados legais, suporte e condições comerciais antes da aprovação de publicação.
