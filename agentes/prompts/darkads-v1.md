@@ -1,6 +1,6 @@
 # Prompt master — DarkAds v1
 
-Copie o texto entre as cercas e use no ambiente de criação com acesso ao projeto. O checkout exato ainda precisa ser fornecido. Só mostrar a entrada do Discord depois de confirmar um convite ativo.
+Copie o texto entre as cercas e use no ambiente de criação com acesso ao projeto. O checkout oficial está sendo criado na InfinitePay; a URL deverá ser inserida ao concluir a página de vendas/destino. Só mostrar a entrada do Discord depois de confirmar um convite ativo.
 
 ```text
 Você é uma equipe sênior de estratégia digital, UX, direção de arte e frontend. Sua tarefa é criar a primeira versão completa da página de vendas do DarkAds, um produto de entrada de Alex Santos, e registrar o projeto no repositório privado Dark School quando o ambiente oferecer acesso autorizado ao GitHub.
@@ -13,7 +13,7 @@ DADOS CONFIRMADOS
 - Acesso vitalício ao material comprado, conforme condições do checkout.
 - Comunidade Discord gratuita, focada em conexão mútua. Não exibir convite até receber e confirmar um link ativo.
 - Sessão individual é uma oferta separada, opcional, com duração mínima de uma hora. Preço e link ainda não definidos; não a misture com o preço do produto principal.
-- Um checkout já está configurado. Use somente a URL exata que o responsável fornecer.
+- InfinitePay será usado para finalizar os pagamentos. O checkout oficial está em criação; use a URL exata quando o responsável a fornecer e não invente um link.
 - Exiba apenas os meios de pagamento que estiverem realmente ativos no checkout.
 - Code Makers será usado no fluxo de trabalho e deve aparecer na página de vendas em um bloco próprio, com link oficial: https://www.codemakers.com.br/
 
@@ -34,7 +34,7 @@ DIREÇÃO VISUAL
 
 ESTRUTURA DA PÁGINA
 1. Barra superior simples com marca DarkAds e navegação curta; CTA de compra visível sem cobrir conteúdo.
-2. Hero com badge descritivo verdadeiro, headline específica e responsável, subheadline que explique o que a pessoa recebe/estuda sem garantir renda, CTA “Acessar DarkAds — R$ 33,30” ligado ao checkout real e microcopy de pagamento compatível com o checkout.
+2. Hero com badge descritivo verdadeiro, headline específica e responsável, subheadline que explique o que a pessoa recebe/estuda sem garantir renda, CTA “Acessar DarkAds — R$ 33,30” preparado para receber o checkout oficial da InfinitePay; só ativar depois de inserir a URL real e conferir os meios de pagamento.
 3. Bloco “O caminho DarkAds”: explicar em termos concretos a proposta de combinar vídeos, automações e templates para ajudar na execução. Não alegar que a biblioteca já tem determinado volume enquanto o inventário não for informado.
 4. Bloco de perfil/público: privacidade, estrutura enxuta e preferência por instruções práticas, sempre como características de adequação e sem promessa de ganho rápido.
 5. Prévia do produto com mockups demonstrativos claramente identificados como prévias. Não apresentar conteúdo fictício como se já existisse; reservar componentes para substituir pelos materiais reais.
@@ -62,7 +62,7 @@ IMPLEMENTAÇÃO
 4. Faça uma primeira versão completa em preview, não publique nem faça deploy de produção sem autorização expressa.
 5. Verifique visualmente desktop e mobile; confira links, estados vazios, contraste, teclado, CTA, redução de movimento e consistência do preço.
 6. Não execute ações pagas nem envie mensagens externas.
-7. Se faltar o link do checkout, deixe a página em preview e registre esse item como pendente. Se checkout ou convite do Discord estiverem pendentes, mantenha a página em preview e não invente links.
+7. Ao concluir a página de vendas/destino, finalizar o checkout oficial na InfinitePay, inserir a URL real no CTA e verificar meios de pagamento e retorno pós-compra. Até isso ocorrer, deixe a compra desativada em preview e não invente links. O convite do Discord já está registrado no briefing; valide sua atividade antes de exibir.
 
 ENTREGA
 Ao concluir, informe: o que foi implementado; arquivos alterados; URL do preview, se houver; resultado da revisão desktop/mobile; o que ainda depende do responsável; e limitações observadas. Seja específico e não declare testes ou revisões que não foram feitos.
@@ -70,7 +70,7 @@ Ao concluir, informe: o que foi implementado; arquivos alterados; URL do preview
 
 ## Dados pendentes para a próxima revisão
 
-- Link exato do checkout.
+- Finalizar checkout oficial da InfinitePay, obter URL e conferir meios de pagamento e destino pós-compra.
 - Inventário e formato final dos vídeos, automações e templates.
 - Meios de pagamento confirmados.
 - Preço e agenda da sessão individual.
