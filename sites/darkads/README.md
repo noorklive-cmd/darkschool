@@ -30,3 +30,12 @@ A análise visual de Project Six observou navegação fixa, hero com promessa ob
 
 ## Revisão visual
 A captura desktop da versão 5 foi revisada depois do deploy e levou a um segundo ajuste de hierarquia da headline e da posição da coruja. A revisão mobile e o percurso interativo completo continuam pendentes.
+
+## Rascunhos para revisão de Alex
+
+- [Auditoria visual complementar Project Six](../../pesquisas/2026-11-25-auditoria-visual-darkads-project-six.md): observações diretas, limites da inspeção e comparação; não é análise quadro a quadro.
+- [Pesquisa das skills e repositórios Base44](../../pesquisas/2026-11-25-base44-skills-darkads.md).
+- [Agentes DarkAds](../../agentes/darkads/README.md) e skills de apoio em `.agents/skills/`.
+- [Demo mobile](mobile-demo.html): envolve a página atual em viewport de telefone, sem mudar `index.html`. O preview local não abriu no Chromium (`ERR_CONNECTION_REFUSED`), portanto a validação visual mobile permanece pendente.
+
+Estes arquivos estão numa branch de revisão. Não alteram a página publicada. A implementação, merge e publicação aguardam aprovação de Alex.

@@ -13,6 +13,8 @@ Base de trabalho da Dark School, de Alex Santos. Use este índice para retomar p
 | Como entregar sites e registrar aprendizados | [Fluxos de trabalho](fluxos/README.md) e [piloto de SDR de IA](fluxos/piloto-sdr-ia-sites.md) |
 | Direção visual e botões | [Design](design/README.md) |
 | Framer, código e demos | [Sites](sites/README.md) |
+| Revisão visual e agentes DarkAds | [Auditoria Project Six](pesquisas/2026-11-25-auditoria-visual-darkads-project-six.md) · [Agentes](agentes/darkads/README.md) |
+| Skills Base44 e prévia mobile | [Pesquisa Base44](pesquisas/2026-11-25-base44-skills-darkads.md) · [Demo mobile](sites/darkads/mobile-demo.html) |
 | Modelos de briefing, pesquisa, decisão e teste | [Templates](templates/README.md) |
 | Integrações para projetos | [Complementos](complementos/README.md) |
 | Material original e respectivas fontes | [Acervo](contexto/acervo.md) |
