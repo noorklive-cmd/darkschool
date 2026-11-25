@@ -1,37 +1,32 @@
-# DarkAds — demo v1
+# DarkAds — demo privada v5
 
-**Status:** Site publicado em URL privada para revisão; demonstração sem checkout nem autenticação de membros.  
-**Responsável:** Alex Santos.
+**Status:** Site privado publicado para revisão; não aberto ao público.  
+**Responsável:** Alex Santos / Alex Designer.
 
 ## Arquivos
-
-- `index.html`: página de vendas responsiva, com proposta, categorias, comunidade, Code Makers, oferta e FAQ.
-- `membros.html`: protótipo visual interativo da área de membros; exemplos de interface, sem conteúdo final ou controle de acesso.
+- `index.html`: landing responsiva, hero animada, fluxo visual, oferta, FAQ e CTA persistente de navegação.
+- `membros.html`: protótipo de área de membros, sem autenticação ou conteúdo final.
+- `assets/darkads-owl.webp`: arte 3D original da coruja DarkAds.
 - URL privada: https://darkads-v1.muddybride16.chatgpt.site
 
+## Auditoria de referência e autoria
+A análise visual de Project Six observou navegação fixa, hero com promessa objetiva, explicação em etapas, trilhas selecionáveis com um fluxo ilustrado e aviso de compra sobreposto, cards de relatos, bloco de comunidade, oferta, CTA fixo e FAQ expansível. DarkAds traduz esses princípios com identidade, texto, arte e composição próprios: coruja geométrica, preto/grafite com vermelho de ação, rota Instagram → página → checkout e notificações explicitamente simuladas. Nenhum mascote, asset, código, depoimento ou texto da referência foi reutilizado. A descrição da animação de partículas foi observada na acessibilidade do site; não houve captura de cada quadro em vídeo nem inspeção de código/ferramentas internas.
+
 ## O que está funcional na demo
+- Navegação por seções, layout responsivo, FAQ, revelação progressiva e animação compatível com `prefers-reduced-motion`.
+- Mascote original com movimento suave e interação com cursor/toque.
+- Toasts identificados como DEMO/TESTE; sem valores ou transações reais.
+- CTA leva ao bloco de oferta; botão de compra desativado até existir checkout oficial InfinitePay.
+- Comunidade gratuita com convite fornecido pelo responsável; validar a expiração antes da divulgação.
+- Code Makers aparece como plataforma externa, não inclusa e não obrigatória.
+- Sem depoimentos ou resultados de alunos inventados.
 
-- Navegação por seções, links, layout responsivo, FAQ e movimento compatível com `prefers-reduced-motion`.
-- Protótipo da área de membros com filtros e busca visual.
-- CTA de compra desativado enquanto a URL do checkout InfinitePay não estiver definida.
-- Discord descrito como gratuito, sem botão de convite até confirmar que o endereço fornecido está ativo.
-- Sem depoimentos, resultados ou quantidades de conteúdo inventados.
-- Code Makers aparece como ferramenta externa independente, não inclusa e não obrigatória.
+## Dados e pendências comerciais
+- Preço principal: R$ 33,30, pagamento único; acesso vitalício ao material adquirido conforme condições do checkout.
+- Quantidade e composição de vídeos, automações e templates não definidas.
+- Indicador de mais de R$ 3 milhões foi informado pelo responsável; documentação, período e contexto ainda precisam de validação antes da divulgação pública.
+- Sessão individual separada, com mínimo de uma hora; preço e agenda pendentes.
+- O protótipo de membros não protege materiais. Ainda não existe autenticação, checkout conectado, confirmação de compra, entrega ou recuperação de acesso.
 
-## Pendências antes da venda
-
-- Concluir e informar URL exata do checkout InfinitePay; conferir meios de pagamento e fluxo de entrega após a compra.
-- Fechar inventário, formato e sequência reais de vídeos, automações e templates.
-- Definir autenticação, hospedagem de materiais, regras de acesso pós-compra, recuperação de conta e suporte. O protótipo de membros não protege conteúdo.
-- Confirmar convite do Discord: https://discord.gg/C8mddYaKgj
-- Informar canal de suporte, dados legais e políticas comerciais.
-- Definir preço, agenda e contratação da sessão individual, se ela for incluída depois.
-- Adicionar provas sociais autorizadas somente se existirem.
-
-## Referência e autoria
-
-Project Six / Night15k foi usado como referência de padrões gerais de hierarquia, sequência de oferta e experiência. DarkAds mantém copy, identidade, estrutura e componentes próprios. Não reutilizar marca, textos, assets, depoimentos ou layout distintivo do Project Six.
-
-## Limitação da revisão visual
-
-O deploy terminou com sucesso. Revisei a captura desktop gerada pelo Site: a primeira dobra apresenta a direção editorial escura, vermelho de ação, navegação, proposta e prévia ilustrativa. O navegador remoto foi direcionado à autenticação porque o Site continua privado; a navegação interativa em toda a página e a revisão mobile não foram concluídas.
+## Revisão visual
+A captura desktop da versão 5 foi revisada depois do deploy e levou a um segundo ajuste de hierarquia da headline e da posição da coruja. A revisão mobile e o percurso interativo completo continuam pendentes.

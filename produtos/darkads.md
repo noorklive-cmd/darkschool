@@ -14,7 +14,7 @@ DarkAds terá identidade própria. Project Six, associado publicamente ao fundad
 
 - Oferta principal: **R$ 33,30**, pagamento único.
 - Acesso vitalício ao material DarkAds adquirido, conforme as condições do checkout.
-- Comunidade Discord gratuita, focada em conexão mútua. O convite fornecido precisa ser confirmado antes de abrir a entrada na página.
+- Comunidade Discord gratuita, focada em conexão mútua. O convite foi informado pelo responsável e está na página; sua validade deve ser conferida antes da divulgação pública.
 - Sessão individual separada, opcional, duração mínima de uma hora; preço, agenda e contratação pendentes. Não aparece na oferta da demo.
 - Categorias planejadas: vídeos, automações e templates. Quantidades, composição e formato final ainda não definidos.
 - Code Makers: ferramenta independente citada como apoio ao processo. Não inclusa, não obrigatória e sem parceria ou desconto anunciados.
