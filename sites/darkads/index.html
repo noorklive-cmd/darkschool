@@ -4,169 +4,79 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080808">
-  <meta name="description" content="DarkAds: materiais de apoio para estudar e organizar a execução no marketing digital. Vídeos, automações e templates. R$ 33,30 em pagamento único.">
-  <title>DarkAds — um caminho para executar no digital</title>
+  <meta name="description" content="DarkAds: uma biblioteca prática de vídeos, automações e templates para organizar a execução no marketing digital.">
+  <title>DarkAds — organize o caminho até a execução</title>
   <style>
-    :root{color-scheme:dark;--bg:#080808;--surface:#111;--raised:#161616;--text:#f5f5f5;--muted:#a1a1aa;--line:#292929;--red:#e11d2e;--red-dark:#b91322;--max:1200px;--gutter:clamp(20px,5vw,72px);--font:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:92px}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
-    a{color:inherit;text-decoration:none}
-    a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #ff4655;outline-offset:4px}
-    button{font:inherit}
-    .skip{position:absolute;left:12px;top:-80px;background:var(--text);color:var(--bg);padding:10px 14px;z-index:20}.skip:focus{top:12px}
-    .preview-strip{min-height:34px;padding:6px 16px;background:#281014;color:#ffd9dc;text-align:center;font-size:12px;line-height:1.5;letter-spacing:.045em;border-bottom:1px solid #50141b}
-    .preview-strip strong{color:#fff}
-    header{position:relative;z-index:5;border-bottom:1px solid var(--line);background:rgba(8,8,8,.96)}
-    .nav{width:min(var(--max),100%);min-height:76px;margin:auto;padding:0 var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{display:inline-flex;align-items:center;gap:10px;font-size:16px;font-weight:850;letter-spacing:-.06em}
-    .brand-mark{display:inline-grid;place-items:center;width:25px;height:25px;border:1px solid var(--red);color:var(--red);font-size:13px;font-weight:900;transform:rotate(-45deg)}
-    .brand-mark span{transform:rotate(45deg)}
-    .nav-links{display:flex;align-items:center;gap:clamp(16px,3vw,38px);font-size:13px;color:#c6c6cc}
-    .nav-links a:not(.nav-cta):hover,.footer-links a:hover{color:#fff}
-    .nav-cta{padding:10px 14px;border:1px solid #4b171d;font-weight:750;color:#fff}
-    .nav-cta:hover{border-color:var(--red);background:#210d10}
-    main{overflow:hidden}
-    .wrap{width:min(var(--max),100%);margin-inline:auto;padding-inline:var(--gutter)}
-    .hero{position:relative;padding:clamp(64px,10vw,132px) 0 94px;border-bottom:1px solid var(--line)}
-    .hero-grid{display:grid;grid-template-columns:minmax(0,1.13fr) minmax(340px,.87fr);align-items:center;gap:clamp(36px,7vw,96px)}
-    .eyebrow{display:flex;align-items:center;gap:10px;color:#d2d2d5;text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.16em}
-    .eyebrow:before{content:"";width:24px;height:2px;background:var(--red)}
-    h1,h2,h3,p{margin-top:0}
-    h1{max-width:740px;margin:22px 0 22px;font-size:clamp(48px,7.2vw,92px);line-height:.96;letter-spacing:-.075em;font-weight:830}
-    h1 .mark{color:var(--red)}
-    .hero-copy{max-width:590px;color:#b7b7bd;font-size:clamp(17px,1.7vw,19px);line-height:1.7}
-    .hero-copy strong{color:#f5f5f5;font-weight:650}
-    .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:15px;margin-top:32px}
-    .button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:13px 19px;border:1px solid var(--red);background:var(--red);color:white;font-size:14px;font-weight:800;line-height:1.2;transition:background .18s ease,border-color .18s ease,transform .18s ease}
-    .button:hover:not(:disabled){background:var(--red-dark);border-color:var(--red-dark);transform:translateY(-2px)}
-    .button:disabled{cursor:not-allowed;opacity:.76}
-    .button .arrow{font-size:18px;font-weight:500}
-    .quiet-link{color:#d7d7db;font-size:13px;text-decoration:underline;text-decoration-color:#555;text-underline-offset:5px}
-    .hero-note{margin:14px 0 0;color:#8e8e96;font-size:12px}
-    .hero-note strong{color:#d5d5da}
-    .visual{position:relative;min-height:435px;display:grid;place-items:center}
-    .visual:before{content:"";position:absolute;width:min(92%,420px);aspect-ratio:1;border:1px solid #252525;transform:rotate(45deg)}
-    .visual:after{content:"";position:absolute;width:min(68%,310px);aspect-ratio:1;border:1px solid #222;transform:rotate(45deg)}
-    .preview-card{position:relative;z-index:1;width:min(100%,390px);padding:24px;background:#0e0e0e;border:1px solid #383838;box-shadow:15px 18px 0 #111;transform:rotate(-2deg)}
-    .preview-card-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:18px;border-bottom:1px solid #2d2d2d;color:#ddd;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
-    .status-dot{display:inline-flex;align-items:center;gap:7px;color:#b9b9bf;font-size:10px;letter-spacing:.08em}
-    .status-dot:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
-    .preview-label{margin:19px 0 6px;color:#8f8f96;font-size:10px;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
-    .preview-title{margin:0 0 23px;font-size:24px;line-height:1.15;letter-spacing:-.04em;font-weight:760}
-    .row{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:center;min-height:56px;border-top:1px solid #282828;color:#e5e5e7;font-size:12px}
-    .row-num{color:var(--red);font-family:ui-monospace,monospace;font-size:11px}
-    .row small{display:block;color:#888;font-size:10px}
-    .row-tag{border:1px solid #383838;padding:4px 6px;color:#aaa;font-size:9px;letter-spacing:.04em;text-transform:uppercase}
-    .preview-disclaimer{margin:18px 0 0;color:#8c8c93;font-size:10px;line-height:1.5}
-    .section{padding:clamp(70px,9vw,120px) 0;border-bottom:1px solid var(--line)}
-    .section-head{display:grid;grid-template-columns:minmax(0,.9fr) minmax(280px,.6fr);gap:48px;align-items:end;margin-bottom:48px}
-    .kicker{margin-bottom:14px;color:#e45a65;font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
-    h2{margin-bottom:0;font-size:clamp(34px,5vw,56px);line-height:1.02;letter-spacing:-.065em;font-weight:780}
-    .section-intro{margin-bottom:2px;color:#a7a7ae;max-width:480px;font-size:16px;line-height:1.7}
-    .path-grid{display:grid;grid-template-columns:1fr 1fr 1fr;border:1px solid var(--line)}
-    .path-item{min-height:250px;padding:28px 28px 30px;position:relative}
-    .path-item+.path-item{border-left:1px solid var(--line)}
-    .path-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:42px;color:#8e8e95;font-family:ui-monospace,monospace;font-size:12px}
-    .path-glyph{width:32px;height:32px;display:grid;place-items:center;border:1px solid #414141;color:#f5f5f5;font-size:13px}
-    .path-item h3{margin-bottom:10px;font-size:22px;letter-spacing:-.04em}
-    .path-item p{margin:0;color:#a3a3aa;font-size:14px;line-height:1.7}
-    .path-foot{display:flex;align-items:center;gap:12px;margin-top:28px;color:#777;font-size:11px}
-    .path-foot:before{content:"";width:26px;height:1px;background:var(--red)}
-    .fit-grid{display:grid;grid-template-columns:1fr .8fr;gap:clamp(40px,9vw,128px);align-items:start}
-    .fit-grid h2{max-width:560px}
-    .fit-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
-    .fit-list li{display:grid;grid-template-columns:24px 1fr;gap:12px;padding:17px 0;border-bottom:1px solid var(--line);color:#c8c8cd;font-size:15px}
-    .fit-list li:before{content:"+";color:var(--red);font-weight:800}
-    .not-promise{margin:24px 0 0;padding:16px 18px;border-left:2px solid #4b171d;color:#96969d;font-size:13px}
-    .materials{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,8vw,110px);align-items:start}
-    .material-copy{max-width:400px;color:#a7a7ae}
-    .material-copy p{margin:24px 0 0}
-    .material-list{border-top:1px solid var(--line)}
-    .material{display:grid;grid-template-columns:48px 1fr 20px;gap:16px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
-    .material-index{color:var(--red);font-family:ui-monospace,monospace;font-size:12px}
-    .material h3{margin:0 0 2px;font-size:18px;letter-spacing:-.03em}
-    .material p{margin:0;color:#92929a;font-size:13px}
-    .material-arrow{color:#777;font-size:18px}
-    .community{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;padding:clamp(28px,5vw,52px);background:#101010;border:1px solid #333}
-    .community .kicker{margin-bottom:12px}
-    .community h2{font-size:clamp(30px,4.5vw,48px)}
-    .community p{max-width:620px;margin:18px 0 0;color:#aaaab1}
-    .community-cta{min-width:180px}.community-status{justify-self:end;color:#d8d8dc;font-size:11px;font-weight:800;letter-spacing:.08em;text-align:right;text-transform:uppercase}.community-status small{display:block;margin-top:8px;color:#888890;font-size:10px;font-weight:500;letter-spacing:0;text-transform:none}
-    .tool-card{display:grid;grid-template-columns:190px 1fr auto;gap:32px;align-items:center;padding:32px;border:1px solid var(--line);background:linear-gradient(105deg,#121212 0%,#0c0c0c 74%)}
-    .tool-stamp{display:flex;align-items:center;justify-content:center;min-height:120px;border:1px solid #343434;color:#fff;font-size:20px;font-weight:850;letter-spacing:-.06em;text-align:center}
-    .tool-stamp span{color:var(--red)}
-    .tool-card h3{margin-bottom:10px;font-size:24px;letter-spacing:-.04em}
-    .tool-card p{max-width:660px;margin:0;color:#a6a6ac;font-size:14px}
-    .tool-disclaimer{display:block;margin-top:12px;color:#77777e;font-size:12px}
-    .tool-link{display:inline-flex;align-items:center;gap:8px;color:#f5f5f5;font-size:13px;font-weight:750;white-space:nowrap}
-    .tool-link span{color:var(--red);font-size:17px}
-    .offer{display:grid;grid-template-columns:1fr minmax(290px,.62fr);gap:54px;align-items:center}
-    .offer-copy h2{max-width:600px}
-    .offer-copy p{max-width:560px;margin:22px 0 0;color:#a7a7ae}
-    .offer-points{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 0;padding:0;list-style:none}
-    .offer-points li{padding:7px 10px;border:1px solid #333;color:#c8c8cd;font-size:12px}
-    .price-card{padding:30px;border:1px solid #3b3b3b;background:#101010}
-    .price-label{color:#a5a5ac;font-size:12px;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
-    .price{margin:12px 0 0;font-size:clamp(44px,6vw,64px);line-height:1;letter-spacing:-.08em;font-weight:850}
-    .price-sub{margin:12px 0 24px;color:#aaaab1;font-size:14px}
-    .price-card .button{width:100%}
-    .price-foot{margin:13px 0 0;color:#85858d;font-size:11px;line-height:1.55}
-    .faq-grid{display:grid;grid-template-columns:.75fr 1fr;gap:clamp(42px,8vw,110px)}
-    .faq-list{border-top:1px solid var(--line)}
-    details{border-bottom:1px solid var(--line)}
-    summary{position:relative;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px 34px 20px 0;cursor:pointer;list-style:none;font-size:15px;font-weight:700}
-    summary::-webkit-details-marker{display:none}
-    summary:after{content:"+";position:absolute;right:4px;color:var(--red);font-size:20px;font-weight:400}
-    details[open] summary:after{content:"−"}
-    details p{max-width:680px;margin:0;padding:0 30px 21px 0;color:#a4a4ab;font-size:14px;line-height:1.7}
-    details a{color:#f5f5f5;text-decoration:underline;text-underline-offset:3px}
-    footer{padding:30px 0 44px}
-    .footer-row{display:flex;align-items:center;justify-content:space-between;gap:24px;color:#87878e;font-size:12px}
-    .footer-brand{color:#eee;font-weight:800;letter-spacing:-.04em}
-    .footer-links{display:flex;gap:22px}
-    .footer-note{margin:17px 0 0;color:#65656d;font-size:11px}
-    @media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:48px}.visual{min-height:390px}.section-head{grid-template-columns:1fr;gap:20px}.fit-grid,.materials,.faq-grid{grid-template-columns:1fr;gap:36px}.tool-card{grid-template-columns:130px 1fr}.tool-link{grid-column:2}.offer{grid-template-columns:1fr;gap:34px}.community{grid-template-columns:1fr}.community-cta{justify-self:start}.community-status{justify-self:start;text-align:left}}
-    @media(max-width:600px){.preview-strip{font-size:11px}.nav{min-height:65px}.nav-links{gap:12px}.nav-links>a:not(.nav-cta){display:none}.nav-cta{padding:8px 10px;font-size:12px}.hero{padding-top:65px;padding-bottom:70px}.hero-grid{gap:28px}h1{font-size:clamp(46px,14vw,68px)}.hero-copy{font-size:16px}.hero-actions{align-items:stretch;flex-direction:column}.button{width:100%;min-height:54px}.quiet-link{align-self:flex-start}.visual{min-height:340px}.preview-card{width:min(100%,340px);padding:20px}.preview-title{font-size:21px}.section{padding:72px 0}.section-head{margin-bottom:30px}.path-grid{grid-template-columns:1fr}.path-item{min-height:0;padding:22px}.path-item+.path-item{border-left:0;border-top:1px solid var(--line)}.path-top{margin-bottom:23px}.tool-card{grid-template-columns:1fr;gap:20px;padding:22px}.tool-stamp{min-height:74px;justify-content:flex-start;padding:0 20px}.tool-link{grid-column:auto}.price-card{padding:23px}.community{padding:24px}.footer-row{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap;gap:14px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+    :root{color-scheme:dark;--bg:#080808;--panel:#101010;--panel2:#151515;--text:#f5f5f5;--muted:#a1a1aa;--dim:#73737b;--line:#292929;--red:#e11d2e;--red2:#ff4856;--max:1240px;--gutter:clamp(20px,5vw,76px);--font:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--red2);outline-offset:4px}
+    .skip{position:absolute;top:-70px;left:14px;padding:10px 14px;background:#fff;color:#000;z-index:30}.skip:focus{top:12px}
+    .notice{padding:7px 16px;text-align:center;border-bottom:1px solid #3b171b;background:#160c0e;color:#d8bfc1;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.notice b{color:#fff}
+    .header{position:sticky;top:0;z-index:20;background:rgba(8,8,8,.91);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{max-width:var(--max);min-height:72px;margin:auto;padding:0 var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:inline-flex;align-items:center;gap:11px;font-size:15px;font-weight:900;letter-spacing:-.055em}.brand-symbol{width:25px;height:25px;display:grid;place-items:center;border:1px solid var(--red);color:var(--red);font-size:12px;transform:rotate(45deg)}.brand-symbol span{transform:rotate(-45deg)}
+    .nav-menu{display:flex;align-items:center;gap:clamp(15px,3vw,34px);font-size:12px;color:#c0c0c6}.nav-menu a:not(.button):hover{color:#fff}
+    .button{display:inline-flex;justify-content:center;align-items:center;gap:12px;min-height:50px;padding:13px 18px;background:var(--red);border:1px solid var(--red);color:#fff;font-size:13px;font-weight:800;line-height:1.25;transition:transform .2s ease,background .2s ease,border-color .2s ease}.button:hover:not(:disabled){background:#c81727;border-color:#c81727;transform:translateY(-2px)}.button:disabled{cursor:not-allowed;opacity:.78}.button.secondary{background:transparent;border-color:#555;color:#eee}.button.secondary:hover{border-color:#aaa;background:#151515}.button .arrow{font-size:17px;font-weight:500}
+    .wrap{width:min(var(--max),100%);margin-inline:auto;padding-inline:var(--gutter)}main{overflow:hidden}
+    .hero{position:relative;min-height:650px;padding:clamp(72px,10vw,132px) 0 88px;border-bottom:1px solid var(--line);isolation:isolate}.hero:before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(ellipse at 76% 36%,rgba(172,20,34,.16),transparent 35%),linear-gradient(110deg,transparent 45%,rgba(255,255,255,.018) 100%)}.hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(340px,.9fr);align-items:center;gap:clamp(38px,7vw,92px)}
+    .eyebrow{display:flex;align-items:center;gap:10px;color:#d5d5da;font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.eyebrow:before{content:"";width:24px;height:2px;background:var(--red)}
+    h1,h2,h3,p{margin-top:0}h1{max-width:780px;margin:22px 0;font-size:clamp(52px,7.5vw,96px);line-height:.94;letter-spacing:-.085em;font-weight:850}h1 em{font-style:normal;color:var(--red2)}.lead{max-width:590px;color:#b9b9c0;font-size:clamp(16px,1.6vw,19px);line-height:1.7}.lead strong{color:#fff;font-weight:650}.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:30px}.micro{margin:13px 0 0;color:#85858e;font-size:11px}.micro b{color:#d2d2d7;font-weight:650}
+    .hero-art{position:relative;min-height:465px;display:grid;place-items:center}.halo{position:absolute;width:min(91%,430px);aspect-ratio:1;border:1px solid #282828;transform:rotate(45deg)}.halo:before,.halo:after{content:"";position:absolute;inset:13%;border:1px solid #242424}.halo:after{inset:28%;border-color:#3c1a1e}
+    .screen{position:relative;z-index:2;width:min(100%,430px);padding:22px;background:linear-gradient(145deg,#141414,#0b0b0b);border:1px solid #3b3b3b;box-shadow:22px 22px 0 rgba(255,255,255,.025);transform:rotate(-1.5deg)}
+    .screen-top{display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid #2c2c2c}.screen-brand{font-size:11px;font-weight:850;letter-spacing:.1em}.screen-status{display:flex;align-items:center;gap:7px;color:#a2a2a9;font-size:9px;text-transform:uppercase;letter-spacing:.12em}.screen-status:before{content:"";width:6px;height:6px;background:var(--red);border-radius:50%}.screen-kicker{margin:20px 0 5px;color:#8a8a92;font-size:9px;letter-spacing:.14em;text-transform:uppercase}.screen h2{margin:0 0 18px;font-size:23px;line-height:1.1;letter-spacing:-.06em}
+    .screen-row{display:grid;grid-template-columns:34px 1fr 25px;align-items:center;gap:12px;padding:13px 0;border-top:1px solid #282828}.row-num{color:var(--red2);font:11px ui-monospace,monospace}.row-title{font-size:12px;font-weight:700}.row-caption{display:block;color:#818189;font-size:10px;font-weight:400}.row-icon{width:24px;height:24px;display:grid;place-items:center;border:1px solid #3b3b3b;color:#c9c9ce;font-size:11px}
+    .screen-note{margin:14px 0 0;color:#77777f;font-size:9px}.float-label{position:absolute;z-index:3;right:0;top:15%;padding:9px 12px;background:#101010;border:1px solid #333;color:#ddd;font-size:9px;letter-spacing:.1em;text-transform:uppercase}.float-label i{display:inline-block;width:5px;height:5px;margin-right:7px;background:var(--red);border-radius:50%}
+    .section{padding:clamp(72px,9vw,120px) 0;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:1fr .66fr;align-items:end;gap:48px;margin-bottom:42px}.kicker{margin-bottom:13px;color:#f05a66;font-size:10px;font-weight:850;letter-spacing:.17em;text-transform:uppercase}h2.section-title{max-width:700px;margin:0;font-size:clamp(36px,5.5vw,66px);line-height:.99;letter-spacing:-.075em;font-weight:820}.intro{max-width:500px;margin:0;color:#a4a4ac;font-size:15px;line-height:1.75}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.step{min-height:250px;padding:26px 28px}.step+.step{border-left:1px solid var(--line)}.step-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:42px;color:#888891;font:11px ui-monospace,monospace}.glyph{width:34px;height:34px;display:grid;place-items:center;border:1px solid #414141;color:#eee;font-size:13px}.step h3{margin:0 0 9px;font-size:22px;letter-spacing:-.05em}.step p{margin:0;color:#9c9ca4;font-size:13px;line-height:1.7}.step-foot{display:flex;align-items:center;gap:10px;margin-top:25px;color:#85858c;font-size:10px}.step-foot:before{content:"";width:22px;height:1px;background:var(--red)}
+    .library{display:grid;grid-template-columns:minmax(270px,.65fr) 1.35fr;gap:60px;align-items:start}.library-copy{position:sticky;top:130px}.library-copy .intro{margin-top:22px}.library-link{display:inline-flex;margin-top:24px;color:#eee;font-size:12px;font-weight:750;text-decoration:underline;text-decoration-color:#555;text-underline-offset:5px}.library-list{border-top:1px solid var(--line)}
+    .library-item{display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:16px;padding:24px 0;border-bottom:1px solid var(--line)}.library-index{color:var(--red2);font:12px ui-monospace,monospace}.library-item h3{margin:0 0 4px;font-size:18px;letter-spacing:-.04em}.library-item p{margin:0;color:#919199;font-size:12px}.pill{padding:5px 8px;border:1px solid #353535;color:#9e9ea5;font-size:9px;letter-spacing:.1em;text-transform:uppercase}
+    .routes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.route{position:relative;min-height:250px;overflow:hidden;padding:25px;border:1px solid #303030;background:linear-gradient(150deg,#141414,#0b0b0b);transition:transform .2s ease,border-color .2s ease}.route:hover{transform:translateY(-4px);border-color:#565656}.route:after{content:"";position:absolute;width:150px;height:150px;right:-35px;bottom:-55px;border:1px solid #3a1a1e;transform:rotate(45deg);box-shadow:0 0 0 18px #101010,0 0 0 19px #252525}.route:nth-child(2):after{border-color:#303030;transform:rotate(20deg)}.route:nth-child(3):after{border-color:#452127;transform:rotate(70deg)}
+    .route-icon{width:37px;height:37px;display:grid;place-items:center;border:1px solid #424242;color:var(--red2);font-size:14px}.route h3{position:relative;z-index:1;margin:48px 0 8px;font-size:22px;letter-spacing:-.05em}.route p{position:relative;z-index:1;max-width:255px;margin:0;color:#9e9ea5;font-size:12px}.route small{display:block;margin-top:18px;color:#77777f;font-size:9px;letter-spacing:.1em;text-transform:uppercase}
+    .community{position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;padding:clamp(30px,5vw,56px);border:1px solid #373737;background:radial-gradient(ellipse at 95% 15%,rgba(205,20,36,.12),transparent 35%),#101010}.community h2{max-width:670px;margin:0;font-size:clamp(34px,4.4vw,54px);line-height:.98;letter-spacing:-.07em}.community p{max-width:630px;margin:18px 0 0;color:#a5a5ad;font-size:14px}.community .button{white-space:nowrap}
+    .tool-card{display:grid;grid-template-columns:170px 1fr auto;align-items:center;gap:28px;padding:28px;border:1px solid var(--line);background:linear-gradient(100deg,#121212,#0b0b0b)}.tool-mark{min-height:100px;display:grid;place-items:center;border:1px solid #343434;color:#fff;font-size:19px;font-weight:900;letter-spacing:-.06em}.tool-mark span{color:var(--red)}.tool-card h3{margin:0 0 8px;font-size:22px;letter-spacing:-.05em}.tool-card p{max-width:650px;margin:0;color:#a2a2aa;font-size:13px}.tool-card small{display:block;margin-top:9px;color:#77777e;font-size:10px}.tool-link{color:#eee;font-size:12px;font-weight:750;white-space:nowrap}.tool-link span{color:var(--red2);font-size:17px}
+    .offer{display:grid;grid-template-columns:1fr minmax(300px,.6fr);gap:60px;align-items:center}.offer-copy p{max-width:560px;margin:22px 0 0;color:#a6a6ad;font-size:14px}.offer-points{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0 0;padding:0;list-style:none}.offer-points li{padding:7px 10px;border:1px solid #343434;color:#d0d0d4;font-size:11px}.price-card{padding:28px;border:1px solid #454545;background:#101010}.price-label{color:#9f9fa7;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.price{margin:12px 0 0;font-size:clamp(48px,6vw,68px);line-height:1;letter-spacing:-.085em;font-weight:850}.price-sub{margin:12px 0 24px;color:#aaaab1;font-size:13px}.price-card .button{width:100%}.price-foot{margin:13px 0 0;color:#85858c;font-size:10px;line-height:1.6}
+    .faq{display:grid;grid-template-columns:.7fr 1fr;gap:clamp(38px,8vw,100px)}.faq-list{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line)}summary{position:relative;padding:19px 34px 19px 0;cursor:pointer;list-style:none;font-size:14px;font-weight:700}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:3px;color:var(--red2);font-size:20px;font-weight:400}details[open] summary:after{content:"−"}details p{max-width:700px;padding:0 28px 20px 0;margin:0;color:#a3a3aa;font-size:12px;line-height:1.75}details a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+    footer{padding:30px 0 46px}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px;color:#82828a;font-size:11px}.footer-brand{color:#eee;font-weight:900;letter-spacing:-.04em}.footer-links{display:flex;gap:20px}.footer-note{margin:16px 0 0;color:#66666e;font-size:10px}
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr}.hero-art{min-height:390px}.section-head{grid-template-columns:1fr;gap:20px}.library{grid-template-columns:1fr;gap:28px}.library-copy{position:static}.tool-card{grid-template-columns:130px 1fr}.tool-link{grid-column:2}.offer{grid-template-columns:1fr;gap:32px}.faq{grid-template-columns:1fr;gap:30px}}
+    @media(max-width:600px){.notice{font-size:9px}.nav{min-height:64px}.nav-menu{gap:10px}.nav-menu>a:not(.nav-buy){display:none}.nav-buy{padding:9px 11px;font-size:11px}.hero{padding:68px 0 70px}.hero-grid{gap:28px}h1{font-size:clamp(48px,14.5vw,72px)}.lead{font-size:15px}.hero-actions{align-items:stretch;flex-direction:column}.hero-actions .button{width:100%}.hero-art{min-height:335px}.screen{padding:19px;width:min(100%,360px)}.screen h2{font-size:20px}.float-label{top:8%;right:-4px}.section{padding:70px 0}.section-head{margin-bottom:30px}.steps{grid-template-columns:1fr}.step{min-height:auto;padding:22px}.step+.step{border-left:0;border-top:1px solid var(--line)}.step-top{margin-bottom:22px}.routes{grid-template-columns:1fr}.route{min-height:190px}.route h3{margin-top:34px}.library-item{grid-template-columns:34px 1fr;gap:10px}.library-item .pill{grid-column:2;justify-self:start}.community{grid-template-columns:1fr;padding:26px}.community .button{width:100%}.tool-card{grid-template-columns:1fr;padding:22px;gap:18px}.tool-mark{min-height:64px;justify-content:start;padding-left:18px}.tool-link{grid-column:auto}.price-card{padding:23px}.footer-row{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap;gap:13px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
   </style>
 </head>
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
-  <div class="preview-strip"><strong>PRÉVIA PRIVADA</strong> · checkout ainda não conectado; compra desativada nesta versão</div>
-  <header>
+  <div class="notice"><b>PRÉVIA PRIVADA</b> · compra desativada até a conclusão do checkout InfinitePay</div>
+  <header class="header">
     <nav class="nav" aria-label="Navegação principal">
-      <a class="brand" href="#topo" aria-label="DarkAds, início"><span class="brand-mark" aria-hidden="true"><span>D</span></span><span>DARKADS</span></a>
-      <div class="nav-links">
-        <a href="#caminho">O caminho</a>
-        <a href="#materiais">Materiais</a>
-        <a href="#comunidade">Comunidade</a>
-        <a class="nav-cta" href="#oferta">R$ 33,30 <span aria-hidden="true">↗</span></a>
+      <a class="brand" href="#topo" aria-label="DarkAds, início"><span class="brand-symbol" aria-hidden="true"><span>D</span></span><span>DARKADS</span></a>
+      <div class="nav-menu">
+        <a href="#caminho">O caminho</a><a href="#biblioteca">Biblioteca</a><a href="#comunidade">Comunidade</a>
+        <a class="button nav-buy" href="#oferta">R$ 33,30 <span class="arrow" aria-hidden="true">↗</span></a>
       </div>
     </nav>
   </header>
   <main id="conteudo">
     <section class="hero" id="topo">
       <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow">Materiais para execução no digital</div>
-          <h1>Ferramenta solta não é <span class="mark">caminho.</span></h1>
-          <p class="hero-copy">DarkAds reúne materiais de apoio para estudar e organizar a execução em marketing digital: <strong>vídeos, automações e templates</strong>, conectados por uma lógica de trabalho.</p>
+        <div class="reveal">
+          <p class="eyebrow">DarkAds · por Alex Designer</p>
+          <h1>Menos ferramenta solta.<br><em>Mais direção.</em></h1>
+          <p class="lead">Uma biblioteca prática para organizar o caminho entre <strong>ideia, conteúdo e execução</strong> no marketing digital.</p>
           <div class="hero-actions">
             <button class="button" type="button" disabled aria-describedby="checkout-status">Acessar DarkAds — R$ 33,30 <span class="arrow" aria-hidden="true">↗</span></button>
-            <a class="quiet-link" href="#caminho">Entenda a proposta</a>
+            <a class="button secondary" href="membros.html">Explorar a área de membros <span class="arrow" aria-hidden="true">↗</span></a>
           </div>
-          <p class="hero-note" id="checkout-status">Pagamento único · acesso vitalício ao material adquirido. <strong>Checkout pendente nesta prévia.</strong></p>
+          <p class="micro"><b>Pagamento único · acesso vitalício ao material adquirido</b></p>
+          <p class="micro" id="checkout-status">Checkout oficial da InfinitePay em criação. A compra desta demo está desativada.</p>
         </div>
-        <div class="visual" aria-label="Demonstração ilustrativa das categorias de materiais">
-          <div class="preview-card">
-            <div class="preview-card-head"><span>DarkAds / Caderno de execução</span><span class="status-dot">PRÉVIA</span></div>
-            <p class="preview-label">Materiais de apoio</p>
-            <h2 class="preview-title">Da ideia à<br>execução.</h2>
-            <div class="row"><span class="row-num">01</span><span>Vídeos<small>Estudo e orientação</small></span><span class="row-tag">Categoria</span></div>
-            <div class="row"><span class="row-num">02</span><span>Automações<small>Apoio ao processo</small></span><span class="row-tag">Categoria</span></div>
-            <div class="row"><span class="row-num">03</span><span>Templates<small>Modelos de trabalho</small></span><span class="row-tag">Categoria</span></div>
-            <p class="preview-disclaimer">Prévia visual ilustrativa. Não representa arquivos ou conteúdos finais do produto.</p>
+        <div class="hero-art reveal" aria-label="Prévia demonstrativa da organização de conteúdo DarkAds">
+          <div class="halo" aria-hidden="true"></div><div class="float-label"><i></i>Biblioteca em construção</div>
+          <div class="screen">
+            <div class="screen-top"><span class="screen-brand">DARKADS / PLAYBOOK</span><span class="screen-status">Prévia do sistema</span></div>
+            <p class="screen-kicker">Seu ponto de partida</p><h2>Escolha o próximo movimento.</h2>
+            <div class="screen-row"><span class="row-num">01</span><span class="row-title">Estudar estruturas<span class="row-caption">Vídeos e referências</span></span><span class="row-icon">↗</span></div>
+            <div class="screen-row"><span class="row-num">02</span><span class="row-title">Organizar a execução<span class="row-caption">Templates de apoio</span></span><span class="row-icon">↗</span></div>
+            <div class="screen-row"><span class="row-num">03</span><span class="row-title">Automatizar etapas<span class="row-caption">Fluxos e processos</span></span><span class="row-icon">↗</span></div>
+            <p class="screen-note">Composição ilustrativa. O inventário real será definido antes da compra.</p>
           </div>
         </div>
       </div>
@@ -174,68 +84,76 @@
 
     <section class="section" id="caminho">
       <div class="wrap">
-        <div class="section-head">
-          <div><p class="kicker">01 / O caminho DarkAds</p><h2>Menos coleção de ferramentas. Mais clareza para executar.</h2></div>
-          <p class="section-intro">A proposta é combinar materiais que ajudem você a entender o processo e organizar o próximo passo. O conteúdo final será detalhado antes da compra, sem antecipar quantidades ou módulos ainda em definição.</p>
+        <div class="section-head reveal"><div><p class="kicker">01 / Como o caminho se organiza</p><h2 class="section-title">Conhecimento só ajuda quando encontra um próximo passo.</h2></div><p class="intro">O DarkAds foi pensado como uma estrutura para consultar, adaptar e aplicar materiais no seu contexto. Sem prometer um resultado automático.</p></div>
+        <div class="steps reveal">
+          <article class="step"><div class="step-top"><span>01 / ENTENDER</span><span class="glyph">↘</span></div><h3>Veja a lógica</h3><p>Use as referências em vídeo para entender o papel de cada etapa dentro de uma operação digital.</p><div class="step-foot">Vídeos e referências</div></article>
+          <article class="step"><div class="step-top"><span>02 / ORGANIZAR</span><span class="glyph">□</span></div><h3>Adapte a estrutura</h3><p>Consulte templates para organizar ideias, conteúdos e tarefas antes de colocar um fluxo em prática.</p><div class="step-foot">Templates de apoio</div></article>
+          <article class="step"><div class="step-top"><span>03 / APLICAR</span><span class="glyph">↗</span></div><h3>Teste no seu ritmo</h3><p>Explore automações como apoio a processos que façam sentido para o seu projeto.</p><div class="step-foot">Automações</div></article>
         </div>
-        <div class="path-grid">
-          <article class="path-item"><div class="path-top"><span>01</span><span class="path-glyph" aria-hidden="true">▶</span></div><h3>Vídeos</h3><p>Conteúdo para estudar ideias e etapas do trabalho com uma sequência compreensível.</p><div class="path-foot">Entender o processo</div></article>
-          <article class="path-item"><div class="path-top"><span>02</span><span class="path-glyph" aria-hidden="true">↗</span></div><h3>Automações</h3><p>Referências de automação para apoiar tarefas e organizar partes do fluxo.</p><div class="path-foot">Estruturar tarefas</div></article>
-          <article class="path-item"><div class="path-top"><span>03</span><span class="path-glyph" aria-hidden="true">▤</span></div><h3>Templates</h3><p>Modelos que ajudam a sair da página em branco e dar forma à execução.</p><div class="path-foot">Aplicar com método</div></article>
+      </div>
+    </section>
+
+    <section class="section" id="biblioteca">
+      <div class="wrap library">
+        <div class="library-copy reveal"><p class="kicker">02 / A biblioteca</p><h2 class="section-title">Um lugar para encontrar o que fazer a seguir.</h2><p class="intro">A área de membros está em demonstração. As categorias estão definidas; os materiais finais e as quantidades ainda serão fechados.</p><a class="library-link" href="membros.html">Ver a prévia da área de membros ↗</a></div>
+        <div class="library-list reveal">
+          <article class="library-item"><span class="library-index">A</span><div><h3>Vídeos</h3><p>Referências para estudar ideias, estruturas e processos.</p></div><span class="pill">Categoria</span></article>
+          <article class="library-item"><span class="library-index">B</span><div><h3>Automações</h3><p>Materiais sobre fluxos que apoiam tarefas do projeto.</p></div><span class="pill">Categoria</span></article>
+          <article class="library-item"><span class="library-index">C</span><div><h3>Templates</h3><p>Estruturas editáveis para organizar a execução.</p></div><span class="pill">Categoria</span></article>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap fit-grid">
-        <div><p class="kicker">02 / Para quem faz sentido</p><h2>Para quem quer um processo mais claro antes de sair testando tudo.</h2></div>
-        <div><ul class="fit-list"><li>Você valoriza privacidade e prefere aprender no seu ritmo.</li><li>Quer uma estrutura enxuta para orientar seus próximos passos.</li><li>Prefere instruções práticas a uma coleção de conceitos soltos.</li><li>Entende que aprender e executar não garante renda ou resultado específico.</li></ul><p class="not-promise">O DarkAds apresenta uma forma de estudar e organizar a execução. Resultados dependem de contexto, decisões e trabalho de cada pessoa.</p></div>
-      </div>
-    </section>
-
-    <section class="section" id="materiais">
-      <div class="wrap materials">
-        <div><p class="kicker">03 / O que você recebe</p><h2>As categorias estão definidas. O inventário, não.</h2><div class="material-copy"><p>Os materiais estão em desenvolvimento. A composição final será informada com clareza antes da compra. Esta prévia não indica uma quantidade, grade de módulos ou bônus.</p></div></div>
-        <div class="material-list" aria-label="Categorias previstas de materiais"><article class="material"><span class="material-index">A</span><div><h3>Vídeos</h3><p>Materiais de estudo e orientação.</p></div><span class="material-arrow" aria-hidden="true">↗</span></article><article class="material"><span class="material-index">B</span><div><h3>Automações</h3><p>Referências para apoiar a execução.</p></div><span class="material-arrow" aria-hidden="true">↗</span></article><article class="material"><span class="material-index">C</span><div><h3>Templates</h3><p>Modelos para organizar o trabalho.</p></div><span class="material-arrow" aria-hidden="true">↗</span></article></div>
+      <div class="wrap">
+        <div class="section-head reveal"><div><p class="kicker">03 / Uma estrutura, três frentes</p><h2 class="section-title">Venda o caminho. Não só a ferramenta.</h2></div><p class="intro">O foco do DarkAds é mostrar como as peças se conectam. Os nomes e a organização final dos materiais ainda podem mudar.</p></div>
+        <div class="routes reveal">
+          <article class="route"><span class="route-icon">↗</span><h3>Conteúdo</h3><p>Entenda como uma ideia pode virar uma peça de comunicação.</p><small>Vídeos · prévia de categoria</small></article>
+          <article class="route"><span class="route-icon">□</span><h3>Estrutura</h3><p>Organize referências e tarefas em um processo que você consiga revisar.</p><small>Templates · prévia de categoria</small></article>
+          <article class="route"><span class="route-icon">⌁</span><h3>Processo</h3><p>Mapeie etapas repetitivas que podem fazer sentido para automatizar.</p><small>Automações · prévia de categoria</small></article>
+        </div>
       </div>
     </section>
 
     <section class="section" id="comunidade">
       <div class="wrap">
-        <div class="community"><div><p class="kicker">04 / Comunidade</p><h2>Conexão mútua, sem cobrança de entrada.</h2><p>A comunidade DarkAds no Discord é gratuita e existe para aproximar pessoas, trocar experiências e construir conexões. O acesso ao material comprado é vitalício; a comunidade é um espaço separado.</p></div><span class="community-status">Discord gratuito<small>Convite pendente de confirmação</small></span></div>
+        <div class="community reveal"><div><p class="kicker">04 / Comunidade gratuita</p><h2>Conexão mútua também faz parte do caminho.</h2><p>O Discord é uma entrada gratuita para trocar experiências, perguntas e referências com outras pessoas da comunidade. A participação não depende da compra do material DarkAds.</p></div><a class="button secondary" href="https://discord.gg/C8mddYaKgj" target="_blank" rel="noopener noreferrer">Entrar no Discord <span class="arrow" aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 
     <section class="section" id="codemakers">
       <div class="wrap">
-        <p class="kicker">05 / Ferramenta de apoio</p>
-        <div class="tool-card"><div class="tool-stamp" aria-hidden="true">CODE <span> MAKERS</span></div><div><h3>Uma ferramenta no nosso processo.</h3><p>O Code Makers apresenta uma plataforma para encontrar clientes, conduzir vendas, organizar a execução e acompanhar resultados de projetos. Está prevista como ferramenta de apoio no processo de criação do DarkAds.</p><span class="tool-disclaimer">O Code Makers é uma plataforma independente. Não está incluída na compra do DarkAds, e adquirir o DarkAds não exige contratá-la.</span></div><a class="tool-link" href="https://www.codemakers.com.br/" target="_blank" rel="noopener noreferrer">Visitar Code Makers <span aria-hidden="true">↗</span></a></div>
+        <div class="section-head reveal"><div><p class="kicker">05 / Ferramenta independente</p><h2 class="section-title">Code Makers no fluxo de criação.</h2></div><p class="intro">A plataforma Code Makers pode apoiar etapas de criação e organização de projetos. Ela é independente do DarkAds.</p></div>
+        <div class="tool-card reveal"><div class="tool-mark">CODE<span>MAKERS</span></div><div><h3>Uma ferramenta de apoio, fora da oferta.</h3><p>O Code Makers não está incluído nos R$ 33,30, não é requisito para acessar o DarkAds e não representa parceria entre as marcas.</p><small>Consulte disponibilidade, recursos e condições diretamente com a plataforma.</small></div><a class="tool-link" href="https://www.codemakers.com.br/" target="_blank" rel="noopener noreferrer">Conhecer Code Makers <span>↗</span></a></div>
       </div>
     </section>
 
     <section class="section" id="oferta">
       <div class="wrap offer">
-        <div class="offer-copy"><p class="kicker">06 / Acesso ao DarkAds</p><h2>Um pagamento. Acesso vitalício ao material adquirido.</h2><p>O valor cobre o produto principal descrito no checkout. Os materiais finais e as condições de acesso serão apresentados antes da confirmação da compra.</p><ul class="offer-points"><li>R$ 33,30</li><li>Pagamento único</li><li>Material adquirido: acesso vitalício</li></ul></div>
-        <div class="price-card"><div class="price-label">DarkAds · produto principal</div><div class="price">R$ 33,30</div><p class="price-sub">Pagamento único</p><button class="button" type="button" disabled aria-describedby="price-status">Acessar DarkAds — R$ 33,30 <span class="arrow" aria-hidden="true">↗</span></button><p class="price-foot" id="price-status">Checkout ainda não conectado nesta prévia. Nenhuma forma de pagamento é anunciada sem conferência do checkout.</p></div>
+        <div class="offer-copy reveal"><p class="kicker">06 / Acesso ao DarkAds</p><h2 class="section-title">Um pagamento. Acesso vitalício ao material adquirido.</h2><p>O produto principal custa <strong>R$ 33,30</strong>. A composição final dos materiais, as condições e os meios de pagamento serão apresentados no checkout antes da confirmação.</p><ul class="offer-points"><li>Pagamento único</li><li>Acesso vitalício ao material adquirido</li><li>Discord gratuito, separado da compra</li></ul></div>
+        <div class="price-card reveal"><div class="price-label">DarkAds · produto principal</div><div class="price">R$ 33,30</div><p class="price-sub">Pagamento único</p><button class="button" type="button" disabled aria-describedby="price-foot">Checkout em criação na InfinitePay <span class="arrow" aria-hidden="true">↗</span></button><p class="price-foot" id="price-foot">A compra será ativada depois que o checkout oficial estiver pronto e validado.</p></div>
       </div>
     </section>
 
     <section class="section" id="duvidas">
-      <div class="wrap faq-grid">
-        <div><p class="kicker">07 / Dúvidas</p><h2>Antes de decidir.</h2></div>
-        <div class="faq-list">
-          <details><summary>O que é o DarkAds?</summary><p>Um produto de entrada com materiais de apoio ao estudo e à execução em marketing digital, planejados em categorias de vídeos, automações e templates. A composição final será informada antes da compra.</p></details>
-          <details><summary>Quanto custa e como é cobrado?</summary><p>O preço do produto principal é R$ 33,30, em pagamento único. Os meios disponíveis só serão informados após conferência do checkout.</p></details>
-          <details><summary>O acesso é vitalício?</summary><p>O acesso vitalício se refere ao material DarkAds adquirido, conforme as condições apresentadas no checkout. Isso não significa acesso vitalício a plataformas externas ou à comunidade.</p></details>
-          <details><summary>O DarkAds garante renda ou vendas?</summary><p>Não. O produto oferece materiais para estudo e organização da execução. Não há promessa de renda, vendas, comissão ou prazo para resultados.</p></details>
-          <details><summary>Como funciona o direito de arrependimento?</summary><p>Em compras feitas pela internet, aplica-se o direito de arrependimento previsto no art. 49 do Código de Defesa do Consumidor: até 7 dias contados da assinatura ou do recebimento do serviço, conforme o caso. Exercido o direito, os valores pagos devem ser restituídos nos termos da legislação aplicável. <a href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm" target="_blank" rel="noopener noreferrer">Consultar o CDC, art. 49</a>.</p></details>
-          <details><summary>A comunidade tem custo?</summary><p>A participação no Discord é gratuita e tem como foco a conexão mútua. O link de convite será adicionado depois de confirmado.</p></details>
+      <div class="wrap faq">
+        <div class="reveal"><p class="kicker">07 / Perguntas frequentes</p><h2 class="section-title">O que já está definido.</h2></div>
+        <div class="faq-list reveal">
+          <details><summary>O que é o DarkAds?</summary><p>Um produto de entrada sobre marketing digital com materiais planejados nas categorias de vídeos, automações e templates. A lista final de conteúdos será apresentada antes da compra.</p></details>
+          <details><summary>Quanto custa?</summary><p>O produto principal custa R$ 33,30 em pagamento único. Os meios disponíveis serão informados após a conclusão do checkout InfinitePay.</p></details>
+          <details><summary>O que significa acesso vitalício?</summary><p>O acesso vitalício se refere ao material DarkAds comprado, conforme as condições apresentadas no checkout. Não inclui acesso vitalício ao Discord nem a plataformas externas.</p></details>
+          <details><summary>O DarkAds garante renda ou vendas?</summary><p>Não. O material oferece referências para estudo e organização. Não há promessa de renda, vendas, comissões ou prazo para resultados.</p></details>
+          <details><summary>A comunidade é paga?</summary><p>Não. A entrada no Discord é gratuita e tem como foco a conexão mútua. <a href="https://discord.gg/C8mddYaKgj" target="_blank" rel="noopener noreferrer">Abrir convite do Discord</a>.</p></details>
+          <details><summary>Como funciona o direito de arrependimento?</summary><p>Nas compras online, aplica-se o direito previsto no art. 49 do Código de Defesa do Consumidor: o prazo é de até 7 dias, conforme a situação prevista em lei. <a href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm" target="_blank" rel="noopener noreferrer">Consultar o CDC</a>.</p></details>
+          <details><summary>Haverá sessão individual?</summary><p>Está prevista como oferta separada, com duração mínima de uma hora. Preço, agenda e contratação ainda não foram definidos; por isso, ela não faz parte desta oferta.</p></details>
         </div>
       </div>
     </section>
   </main>
-  <footer>
-    <div class="wrap"><div class="footer-row"><a class="footer-brand" href="#topo">DARKADS</a><span>Por Alex Santos</span><div class="footer-links"><a href="#oferta">Acesso</a><a href="#duvidas">Dúvidas</a><a href="https://www.codemakers.com.br/" target="_blank" rel="noopener noreferrer">Code Makers ↗</a></div></div><p class="footer-note">Esta página está em prévia. O checkout, informações de suporte e políticas comerciais serão conectados após confirmação dos dados.</p></div>
-  </footer>
+  <footer><div class="wrap"><div class="footer-row"><a class="footer-brand" href="#topo">DARKADS</a><span>Alex Designer · Dark School</span><div class="footer-links"><a href="#oferta">Acesso</a><a href="#duvidas">Dúvidas</a><a href="membros.html">Demo da área</a><a href="https://www.codemakers.com.br/" target="_blank" rel="noopener noreferrer">Code Makers ↗</a></div></div><p class="footer-note">Prévia de design. Checkout e área de membros não estão conectados. Conteúdos e imagens demonstrativos não representam entregáveis finais.</p></div></footer>
+  <script>
+    const revealItems=document.querySelectorAll(".reveal");
+    if("IntersectionObserver" in window&&!window.matchMedia("(prefers-reduced-motion: reduce)").matches){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}})},{threshold:.12});revealItems.forEach(item=>observer.observe(item))}else{revealItems.forEach(item=>item.classList.add("visible"))}
+  </script>
 </body>
 </html>
