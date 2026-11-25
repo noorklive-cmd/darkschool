@@ -1,50 +1,37 @@
-# DarkAds — escopo inicial
+# DarkAds — escopo e estado do projeto
 
-**Status:** demo visual privada publicada; produto e checkout ainda em finalização.  
-**Responsável:** Alex Santos.  
-**Última atualização:** 25/11/2026.
+**Responsável:** Alex Santos / Alex Designer.  
+**Status em 25/11/2026:** demo privada, versão 5, publicada para revisão.  
+**Página:** https://darkads-v1.muddybride16.chatgpt.site
 
-## Objetivo
-
-Criar uma oferta de entrada sobre marketing digital acompanhada por uma comunidade gratuita no Discord. A proposta é vender o caminho de execução — apoiado por categorias planejadas de vídeos, automações e templates — em vez de uma coleção avulsa de ferramentas: **“vender o caminho, não a pá”**.
-
-DarkAds terá identidade própria. Project Six, associado publicamente ao fundador Night15k, é referência apenas para princípios gerais de hierarquia, ritmo e organização da experiência. Copy, visual e componentes desta demo foram desenvolvidos para DarkAds; não reutilizar marca, textos, mídia, depoimentos ou layout distintivo da referência.
+## Proposta
+Produto de entrada sobre marketing digital: vídeos, automações e templates organizados para ensinar o caminho de execução, não só entregar ferramentas — “vender o caminho, não a pá”. O inventário e o formato final ainda dependem da conclusão do produto; a página usa categorias e não promete uma quantidade específica.
 
 ## Decisões confirmadas
+- **Preço:** R$ 33,30, pagamento único.
+- **Acesso:** vitalício ao material adquirido, conforme as condições exibidas no checkout.
+- **Comunidade:** entrada gratuita no Discord, com foco em conexão mútua. Convite fornecido pelo responsável: https://discord.gg/C8mddYaKgj. Verificar validade antes da divulgação pública.
+- **Identidade visual:** preto/grafite, branco/cinza e vermelho de ação; coruja geométrica original como símbolo de visão, observação e estratégia.
+- **Code Makers:** ferramenta independente; não faz parte do produto, não é requisito e nenhuma parceria está anunciada.
+- **Atendimento individual:** oferta separada e opcional, com duração mínima de uma hora; preço, agenda e contratação ainda não definidos.
 
-- Oferta principal: **R$ 33,30**, pagamento único.
-- Acesso vitalício ao material DarkAds adquirido, conforme as condições do checkout.
-- Comunidade Discord gratuita, focada em conexão mútua. O convite foi informado pelo responsável e está na página; sua validade deve ser conferida antes da divulgação pública.
-- Sessão individual separada, opcional, duração mínima de uma hora; preço, agenda e contratação pendentes. Não aparece na oferta da demo.
-- Categorias planejadas: vídeos, automações e templates. Quantidades, composição e formato final ainda não definidos.
-- Code Makers: ferramenta independente citada como apoio ao processo. Não inclusa, não obrigatória e sem parceria ou desconto anunciados.
-- Direção visual: editorial escura, alto contraste, acento vermelho moderado; #080808, #111111, #F5F5F5, #A1A1AA, #262626, #E11D2E.
-- InfinitePay será usada no checkout; URL e meios de pagamento não informados ainda.
-- Sem promessas de renda, comissões, vendas ou prazo de resultado.
+## Conteúdo e afirmações
+- Categorias previstas: vídeos, automações e templates. Quantidades, sequência e formatos ainda não definidos.
+- A copy “Venda no Instagram sem gastar um real em anúncios” apresenta uma proposta de conteúdo orgânico, sem garantia de venda, renda, comissão ou prazo.
+- O indicador de faturamento acumulado superior a R$ 3 milhões foi informado pelo responsável. A documentação, o período, as pessoas incluídas e a autorização de uso precisam ser validados antes da divulgação pública. Retirar o indicador se não houver comprovação suficiente.
+- Os toasts da hero são demonstrações identificadas como DEMO/TESTE, sem comprador, valor ou transação real.
+- Não usar depoimentos ou números de alunos sem autorização e evidência verificável.
 
-## Demo
+## Estado técnico
+- Checkout oficial InfinitePay ainda em criação; preço e botão estão visíveis, mas a compra permanece desativada.
+- Área de membros é somente protótipo visual; não existe autenticação, controle de compra, liberação de materiais, recuperação de acesso ou backend.
+- Link de convite, suporte, dados legais e políticas comerciais precisam ser conferidos antes de divulgação ao público.
+- A captura desktop da hero da versão 5 foi revisada. Revisão interativa completa e mobile continuam pendentes.
 
-- Página de vendas: [sites/darkads/index.html](../sites/darkads/index.html)
+## Arquivos relacionados
+- Página: [sites/darkads/index.html](../sites/darkads/index.html)
 - Área de membros: [sites/darkads/membros.html](../sites/darkads/membros.html)
-- Notas e pendências: [sites/darkads/README.md](../sites/darkads/README.md)
-- Site privado: https://darkads-v1.muddybride16.chatgpt.site
+- Auditoria visual e pendências: [pesquisas/2026-11-24-darkads-project-six.md](../pesquisas/2026-11-24-darkads-project-six.md)
 
-A landing inclui navegação por seções, CTA desativado, categorias sem inventário inventado, comunidade, bloco independente do Code Makers, preço, FAQ e informação de direito de arrependimento legal. A área de membros é um protótipo visual com interação demonstrativa; não há autenticação, conteúdo final, liberação condicionada à compra ou backend conectado. A captura desktop da primeira dobra foi revisada; a inspeção interativa completa e mobile continuam pendentes.
-
-## O que falta antes da venda
-
-1. Finalizar o checkout InfinitePay; inserir a URL, confirmar formas de pagamento e validar o fluxo e a entrega pós-compra.
-2. Fechar inventário real e sequência dos materiais.
-3. Implementar autenticação, proteção e hospedagem dos conteúdos, com acesso condicionado à confirmação da compra.
-4. Confirmar o convite Discord, canal de suporte, dados legais e políticas comerciais.
-5. Obter provas sociais e assets reais/autorizados, se houver.
-6. Definir a sessão individual separada, se for ofertada.
-
-## Pesquisa de referência
-
-- Project Six: https://p6.chat/ — referência de padrões gerais; ver [pesquisa](../pesquisas/2026-11-24-darkads-project-six.md).
-- Code Makers: https://www.codemakers.com.br/
-- CDC, art. 49: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
-- Vídeo de referência enviado: https://youtu.be/Ucp2NjKdtEk?is=qEdF-j_8zSdNNCrU — não analisado.
-
-Não inventar alunos, vendas, faturamento, escassez, bônus ou quantidade de materiais. Direito de arrependimento explicado como disposição legal, não como política copiada da Project Six.
+## Inspiração e autoria
+Project Six serve somente como referência de princípios gerais de hierarquia, narrativa da oferta e movimento. A análise e os padrões traduzidos para DarkAds estão documentados na pesquisa. DarkAds tem copy, layout, componentes e mascote próprios; não reutilizar marca, personagem, código, mídia, depoimentos ou composição distintiva do Project Six.
