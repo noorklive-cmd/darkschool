@@ -34,4 +34,4 @@ Project Six / Night15k foi usado como referência de padrões gerais de hierarqu
 
 ## Limitação da revisão visual
 
-O deploy terminou com sucesso, mas a URL solicita autenticação ChatGPT porque o Site continua privado para a conta proprietária. O navegador da revisão não tem essa sessão; portanto, a inspeção visual na página hospedada não foi concluída.
+O deploy terminou com sucesso. Revisei a captura desktop gerada pelo Site: a primeira dobra apresenta a direção editorial escura, vermelho de ação, navegação, proposta e prévia ilustrativa. O navegador remoto foi direcionado à autenticação porque o Site continua privado; a navegação interativa em toda a página e a revisão mobile não foram concluídas.
