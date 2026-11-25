@@ -9,6 +9,7 @@ Base de trabalho da Dark School, de Alex Santos. Use este índice para retomar p
 | NFC, planos e teste com lojistas | [Dark Tap](produtos/dark-tap.md) |
 | Orientações para agentes | [AGENTS.md](AGENTS.md) e [Prompts](agentes/prompts.md) |
 | Treinamento de motion graphics | [Referências Dark School](training/dark-school/voice-and-narrative.md) |
+| VSL Dark Ads | [Briefing de produção](training/dark-school/vsl-dark-ads.md) |
 | Como entregar sites e registrar aprendizados | [Fluxos de trabalho](fluxos/README.md) |
 | Direção visual e botões | [Design](design/README.md) |
 | Framer, código e demos | [Sites](sites/README.md) |
