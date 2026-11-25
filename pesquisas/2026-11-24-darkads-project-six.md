@@ -60,3 +60,12 @@ A contratação fora do estabelecimento comercial pode ser desfeita no prazo de 
 ## Limitações da execução
 
 O ambiente não expõe integração ou sessão autenticada do Code Makers. A fonte pública oficial foi consultada para conferir a descrição; a ferramenta não foi operada na criação. A revisão de desktop/mobile não foi concluída porque o navegador remoto não conseguiu acessar o servidor local. A página está versionada no repositório e permanece sem deploy de produção.
+
+
+## Registro da demo — 25/11/2026
+
+- O nome “Night15k” foi interpretado como referência ao fundador associado publicamente ao Project Six; a página oficial apresenta hierarquia, etapas, comunidade, oferta e FAQ. Usamos apenas padrões gerais, sem copiar provas, resultados, marca, copy ou componentes específicos. Fonte: https://p6.chat/
+- Demo DarkAds implantada com sucesso como Site privado: https://darkads-v1.muddybride16.chatgpt.site
+- A landing page é responsiva e mantém o CTA inativo até o checkout InfinitePay ser conectado. A página de membros é protótipo visual e não possui autenticação nem conteúdo final.
+- A inspeção visual no navegador remoto ficou pendente porque a URL privada exigiu login da conta proprietária, indisponível nessa sessão de QA.
+- Ver inventário final, checkout, autenticação/entrega, convite Discord e suporte em [produtos/darkads.md](../produtos/darkads.md) e [sites/darkads/README.md](../sites/darkads/README.md).
