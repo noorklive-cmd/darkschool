@@ -9,8 +9,8 @@
 
 ## Pendências antes de ativar a compra
 
-- Adicionar a URL exata do checkout e validar o destino.
-- Conferir os meios de pagamento realmente ativos.
+- Concluir o checkout oficial na InfinitePay ao finalizar a página de vendas/destino; inserir a URL exata no CTA e validar o destino pós-compra.
+- Conferir os meios de pagamento habilitados na InfinitePay antes de anunciá-los na página.
 - Confirmar descrição final e inventário de vídeos, automações e templates.
 - Confirmar canais reais de suporte e políticas comerciais.
 - Confirmar o link de convite do Discord antes de exibir uma ação de entrada. Um endereço consta no histórico do projeto, mas não foi possível validar sua atividade nesta revisão; por isso, a ação está oculta na prévia.
