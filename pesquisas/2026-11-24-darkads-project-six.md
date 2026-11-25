@@ -67,5 +67,5 @@ O ambiente não expõe integração ou sessão autenticada do Code Makers. A fon
 - O nome “Night15k” foi interpretado como referência ao fundador associado publicamente ao Project Six; a página oficial apresenta hierarquia, etapas, comunidade, oferta e FAQ. Usamos apenas padrões gerais, sem copiar provas, resultados, marca, copy ou componentes específicos. Fonte: https://p6.chat/
 - Demo DarkAds implantada com sucesso como Site privado: https://darkads-v1.muddybride16.chatgpt.site
 - A landing page é responsiva e mantém o CTA inativo até o checkout InfinitePay ser conectado. A página de membros é protótipo visual e não possui autenticação nem conteúdo final.
-- A inspeção visual no navegador remoto ficou pendente porque a URL privada exigiu login da conta proprietária, indisponível nessa sessão de QA.
+- A captura desktop gerada pelo Site confirmou a direção visual da primeira dobra. A inspeção interativa completa e mobile ficaram pendentes porque a URL privada exigiu login da conta proprietária, indisponível nessa sessão de QA.
 - Ver inventário final, checkout, autenticação/entrega, convite Discord e suporte em [produtos/darkads.md](../produtos/darkads.md) e [sites/darkads/README.md](../sites/darkads/README.md).
