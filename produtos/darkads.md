@@ -2,7 +2,7 @@
 
 **Status:** primeira página em prévia privada; produto e checkout ainda em finalização.  
 **Responsável:** Alex Santos.  
-**Última atualização:** 24/11/2026.
+**Última atualização:** 25/11/2026.
 
 ## Objetivo
 
@@ -19,12 +19,12 @@ DarkAds terá identidade própria. A Project Six é referência para princípios
 - **Materiais:** categorias planejadas de vídeos, automações e templates. Quantidades, composição e formato final dependem do Project Six e da finalização do produto.
 - **Code Makers:** ferramenta independente prevista como apoio no processo de criação. A apresentação deve se limitar ao que a página oficial confirma; não dizer que há parceria, acesso incluso, desconto ou exigência de contratação.
 - **Direção visual:** editorial escura, alto contraste e vermelho de ação usado com moderação. Referência: fundo #080808, superfícies #111111, texto #F5F5F5, texto secundário #A1A1AA, borda #262626 e vermelho #E11D2E.
-- **Checkout:** existe, segundo o responsável, mas a URL exata não foi fornecida. Não criar CTA funcional ou URL de suposição.
+- **Pagamentos:** InfinitePay será usado para finalizar as vendas. O checkout oficial ainda está sendo criado; sua URL não está disponível.
 - **Meios de pagamento:** não anunciar até conferir o checkout.
 
 ## Em aberto — não preencher por suposição
 
-- URL exata do checkout e métodos de pagamento ativos.
+- Finalizar o checkout oficial na InfinitePay; inserir e validar a URL, os meios de pagamento ativos e o destino pós-compra.
 - Inventário e organização finais de vídeos, automações e templates.
 - Convite ativo do Discord.
 - Preço, agenda e forma de contratação da sessão individual.
@@ -37,7 +37,7 @@ Não inventar resultados, alunos, faturamento, comissões, escassez, bônus ou q
 
 Arquivo-fonte: [sites/darkads/index.html](../sites/darkads/index.html). Estado e pendências: [sites/darkads/README.md](../sites/darkads/README.md).
 
-A primeira versão usa uma prévia visual identificada como ilustrativa, categorias gerais de conteúdo, status privado e sem deploy de produção. O CTA exibe o preço correto, mas permanece desativado até conectar e validar o checkout. O convite do Discord não aparece enquanto a atividade do link não for confirmada.
+A primeira versão usa uma prévia visual identificada como ilustrativa, categorias gerais de conteúdo, status privado e sem deploy de produção. O CTA exibe o preço correto, mas permanece desativado até concluir o checkout oficial na InfinitePay, inserir a URL e validar o destino. O convite do Discord não aparece enquanto a atividade do link não for confirmada.
 
 A página apresenta:
 
@@ -61,7 +61,7 @@ A página apresenta:
 
 ## Próximos passos
 
-1. Receber a URL exata do checkout e conferir o destino e meios habilitados.
+1. Ao concluir a página de vendas/destino, finalizar a criação do checkout na InfinitePay, inserir a URL exata e conferir pagamento, destino pós-compra e meios habilitados.
 2. Fechar o inventário real e a organização dos materiais.
 3. Confirmar o link de convite do Discord e o canal de suporte.
 4. Conferir acessibilidade e experiência visual em desktop e mobile assim que houver uma prévia de navegador utilizável.
