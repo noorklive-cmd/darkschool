@@ -29,7 +29,7 @@ DarkAds terá identidade própria. Project Six, associado publicamente ao fundad
 - Notas e pendências: [sites/darkads/README.md](../sites/darkads/README.md)
 - Site privado: https://darkads-v1.muddybride16.chatgpt.site
 
-A landing inclui navegação por seções, CTA desativado, categorias sem inventário inventado, comunidade, bloco independente do Code Makers, preço, FAQ e informação de direito de arrependimento legal. A área de membros é um protótipo visual com interação demonstrativa; não há autenticação, conteúdo final, entitlement de compra ou backend conectado.
+A landing inclui navegação por seções, CTA desativado, categorias sem inventário inventado, comunidade, bloco independente do Code Makers, preço, FAQ e informação de direito de arrependimento legal. A área de membros é um protótipo visual com interação demonstrativa; não há autenticação, conteúdo final, liberação condicionada à compra ou backend conectado. A captura desktop da primeira dobra foi revisada; a inspeção interativa completa e mobile continuam pendentes.
 
 ## O que falta antes da venda
 
