@@ -7,6 +7,7 @@
 - Duração-alvo: 70 segundos; máximo de 80 segundos.
 - CTA: uma única chamada final, sem botão, URL ou QR code no vídeo. O botão será controlado pelo site.
 - Fonte de direção: Referência 02, combinada às regras de voz e motion da Dark School.
+- Implementação: composição interativa em React + Framer Motion em `sites/dark-ads-vsl/`; não depende de créditos de geração de vídeo.
 
 ## Tese
 
@@ -38,4 +39,4 @@ Não incluir números de performance, promessas de faturamento, percentuais de r
 
 ## Próximo teste
 
-Retomar a renderização no Motion quando houver créditos disponíveis e revisar: legibilidade do texto, tempo de narração, ausência de CTA visual concorrente e aderência do fluxo ao site que hospedará a VSL.
+Validar visualmente a composição no navegador no contexto da página que a hospedará, ajustar o ritmo de cada cena à locução aprovada e confirmar a posição do botão externo. Um render MP4 permanece opcional; a experiência em código não depende dele.

@@ -10,3 +10,6 @@ __pycache__/
 # Local inspection artifacts and user-supplied source files
 /.analysis-frames/
 /.codex-attachments/
+
+# Build local da VSL React
+/sites/dark-ads-vsl/dist/
