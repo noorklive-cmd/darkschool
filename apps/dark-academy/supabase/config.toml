@@ -1,0 +1,12 @@
+project_id = "dark-academy"
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 15
+[auth]
+enabled = true
+site_url = "http://127.0.0.1:3000"
